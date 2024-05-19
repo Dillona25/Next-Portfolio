@@ -19,6 +19,9 @@ const config = {
   prefix: "",
   theme: {
     extend: {
+      backgroundImage: {
+        Filter: "url('../assets/Filter.svg')",
+      },
       colors: {
         black: {
           DEFAULT: "#000",
