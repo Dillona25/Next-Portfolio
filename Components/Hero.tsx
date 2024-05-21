@@ -17,12 +17,12 @@ export const Hero = () => {
       </div>
       <div className="flex flex-col items-center justify-center relative z-10">
         <div className="max-w-[900px]">
-          <p className="uppercase tracking-widest text-xs m-auto text-blue-100 max-w-80">
-            Created with Next.js & Aceternity UI
+          <p className=" text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+            Hello 👋 Im Dillon, A Full Stack Developer
           </p>
           <TextGenerateEffect words="Transforming Concepts into Seamless User Experiences" />
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi 👋 Im Dillon, a full stack Web Developer
+          <p className="uppercase tracking-widest text-xs text-center text-blue-100">
+            Created with Next.js & Aceternity UI
           </p>
           <a href="#projects">
             <Button
