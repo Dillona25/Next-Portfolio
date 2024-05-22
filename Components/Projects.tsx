@@ -1,7 +1,5 @@
 import { ProjectCard } from "./ui/ProjectCard";
-import AviNews from "../public/AviNews.png";
 import { AviNewsData, AroundTheUsData, WTWData } from "@/data/data";
-import { Button } from "./ui/Button";
 
 export const Projects = () => {
   return (

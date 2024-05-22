@@ -42,12 +42,12 @@ export const WTWData = {
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "Check out my experience. ",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/B1.jpg",
     spareImg: "",
   },
   {
@@ -100,5 +100,20 @@ export const gridItems = [
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
     img: "",
     spareImg: "",
+  },
+];
+
+export const testimonials = [
+  {
+    quote:
+      "I had the opportunity to tutor Dillon at Tripleten, and he truly stood out as an exceptional student. His ability to grasp new concepts at a rapid pace was impressive, especially in a challenging field like ours. More than just being tech-savvy, Dillon has a clear and effective way of communicating that made a significant difference to our learning environment. What’s really remarkable about Dillon is his talent for bringing people together. His positive attitude is infectious, and he has a unique talent for inspiring everyone around him to perform their best. Dillon is a great team player and a born leader. He would be an invaluable asset to any tech team or project.",
+    name: "Max Jacobsen",
+    title: "Senior SOftware Engineer | Republic Services",
+  },
+  {
+    quote:
+      "I collaborated with Dillon and 3 other developers to create the Flight Checker during TripleTen's August Code Jam. The project was Dillon's idea. His curiosity and ability to come up with unique ideas stood out during our time working together. Throughout the project, he showed a genuine willingness to learn and adapt, diving into new tools and languages with enthusiasm. His dedication made our journey from concept to execution smooth and efficient. I'd recommend Dillon to anyone seeking a dedicated, curious, and innovative developer.",
+    name: "Anderson Marques",
+    title: "React Developer | TripleTen",
   },
 ];
