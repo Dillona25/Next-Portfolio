@@ -17,7 +17,7 @@ export const ProjectCard = ({
 }) => {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="relative dark:hover:shadow-lg dark:hover:shadow-purple dark:bg-[#2b2b2b] dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+      <CardBody className="relative dark:hover:shadow-lg dark:hover:shadow-purple dark:bg-[#2b2b2b] dark:border-white/[0.2] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem translateZ="100" className="w-full mt-4">
           <img
             src={src}
