@@ -3,6 +3,7 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
 import { Button } from "./Button";
 import { FaLocationArrow } from "react-icons/fa6";
+import { GoArrowRight } from "react-icons/go";
 
 export const BentoGrid = ({
   className,
@@ -89,7 +90,7 @@ export const BentoGridItem = ({
             } group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10`
           )}
         >
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#dadada] z-10">
+          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-xs md:text-sm text-[#dadada] z-10">
             {description}
           </div>
 
@@ -99,60 +100,82 @@ export const BentoGridItem = ({
             {title}
           </div>
           {id === 1 && (
-            <ol className="relative border-s border-gray-200 dark:border-black-100">
-              <li className="mb-10 ms-4">
-                <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border dark:border-gray-900 dark:bg-black-100"></div>
-                <time className="mb-1 text-sm font-normal leading-none text-[#dadada]">
-                  April 2024 - Current
-                </time>
-                <h3 className="text-lg font-semibold dark:text-[#dadada]">
-                  Web Developer | Premier Cable Services LLC
-                </h3>
-                <div className="flex flex-col gap-2 mt-2 text-sm font-normal dark:text-[#dadada]">
-                  <span>
-                    - Collaborated with a team of six engineers, employing Agile
-                    methodologies and CI/CD pipeline practices to streamline
-                    development processes and ensure efficient project delivery.
-                  </span>
-                  <span>
-                    - Built multiple front-end components using React,
-                    TypeScript and Tailwind CSS to enhance the UX.
-                  </span>
-                  <span>
-                    - Wrote search queries and mutations in GraphQL to fetch and
-                    create data from a database achieving an average response
-                    time and optimizing application performance as well as user
-                    experience.
-                  </span>
+            <>
+              <div>
+                <h1 className="flex items-center text-left font-bold leading-[40px] text-4xl lg:text-5xl pb-5 sm:pb-10">
+                  Experience<span className="text-purple">.</span>
+                  <span className="border-[#797979] ml-4 border-[1px] w-full"></span>
+                </h1>
+                <div className="flex flex-col gap-2 border-b-[1px] border-[#797979] pb-5">
+                  <div className="flex justify-between text-[15px] sm:text-[18px] font-bold">
+                    <h2>Slopopedia, NPO</h2>
+                    <p>2024</p>
+                  </div>
+                  <div className="flex justify-between text-[15px] sm:text-[18px] font-bold text-purple">
+                    <h2>Software Engineer</h2>
+                    <p>Remote</p>
+                  </div>
+                  <p className="w-full text-[15px] md:text-base">
+                    Worked in a team of six engineers to streamline development
+                    processes and enhance user experience through Agile
+                    methodologies, CI/CD pipeline practices, front-end component
+                    building, and efficient data manipulation with GraphQL.
+                  </p>
+                  <div className="flex gap-2 mt-2">
+                    <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
+                      TypeScript
+                    </span>
+                    <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
+                      React.js
+                    </span>
+                    <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
+                      Tailwind
+                    </span>
+                    <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
+                      GraphQL
+                    </span>
+                  </div>
                 </div>
-              </li>
-              <li className="mb-10 ms-4">
-                <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border dark:border-gray-900 dark:bg-black-100"></div>
-                <time className="mb-1 text-sm font-normal leading-none text-[#dadada]">
-                  January 2024 - April 2024
-                </time>
-                <h3 className="text-lg font-semibold dark:text-[#dadada]">
-                  Software Developer (Intern) | Slopopedia, NPO
-                </h3>
-                <div className="flex flex-col gap-2 mt-2 text-sm font-normal dark:text-[#dadada]">
-                  <span>
-                    - Collaborated with a team of six engineers, employing Agile
-                    methodologies and CI/CD pipeline practices to streamline
-                    development processes and ensure efficient project delivery.
-                  </span>
-                  <span>
-                    - Built multiple front-end components using React,
-                    TypeScript and Tailwind CSS to enhance the UX.
-                  </span>
-                  <span>
-                    - Wrote search queries and mutations in GraphQL to fetch and
-                    create data from a database achieving an average response
-                    time and optimizing application performance as well as user
-                    experience.
-                  </span>
+              </div>
+              <div>
+                <div className="flex flex-col gap-2 pb-5">
+                  <div className="flex justify-between text-[15px] sm:text-[18px] font-bold">
+                    <h2>Slopopedia, NPO</h2>
+                    <p>2024</p>
+                  </div>
+                  <div className="flex justify-between text-[15px] sm:text-[18px] font-bold text-purple">
+                    <h2>Software Engineer</h2>
+                    <p>Remote</p>
+                  </div>
+                  <p className="w-full text-[15px] md:text-base">
+                    Worked in a team of six engineers to streamline development
+                    processes and enhance user experience through Agile
+                    methodologies, CI/CD pipeline practices, front-end component
+                    building, and efficient data manipulation with GraphQL.
+                  </p>
+                  <div className="flex gap-2 mt-2">
+                    <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
+                      TypeScript
+                    </span>
+                    <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
+                      React.js
+                    </span>
+                    <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
+                      Tailwind
+                    </span>
+                    <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
+                      GraphQL
+                    </span>
+                  </div>
                 </div>
-              </li>
-            </ol>
+                <div className="flex items-center gap-4 mt-5">
+                  <p className="font-semibold text-purple text-sm sm:text-base">
+                    My links
+                  </p>
+                  <GoArrowRight className="text-purple" />
+                </div>
+              </div>
+            </>
           )}
           {id === 2 && <GlobeDemo />}
           {id === 3 && (
