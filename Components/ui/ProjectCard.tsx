@@ -1,61 +1,40 @@
-import { CardBody, CardContainer, CardItem } from "./Project3DCard";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 export const ProjectCard = ({
   src,
   alt,
   title,
   description,
-  buttonOneText,
-  buttonTwoText,
 }: {
   src: string;
   alt: string;
   title: string;
   description: string;
-  buttonOneText: string;
-  buttonTwoText: string;
 }) => {
   return (
-    <CardContainer className="inter-var">
-      <CardBody className="relative dark:hover:shadow-lg dark:hover:shadow-purple dark:bg-[#2b2b2b] dark:border-white/[0.2] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-        <CardItem translateZ="100" className="w-full mt-4">
-          <img
-            src={src}
-            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-            alt={alt}
-          />
-        </CardItem>
-        <CardItem
-          translateZ="50"
-          className="text-xl mt-5 font-bold dark:text-white"
-        >
-          {title}
-        </CardItem>
-        <CardItem
-          as="p"
-          translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-        >
-          {description}
-        </CardItem>
-        <div className="flex gap-5 items-center mt-5">
-          <CardItem
-            translateZ={20}
-            href="https://twitter.com/mannupaaji"
-            target="__blank"
-            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
-          >
-            {buttonOneText}
-          </CardItem>
-          <CardItem
-            translateZ={20}
-            as="button"
-            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-          >
-            {buttonTwoText}
-          </CardItem>
+    <div className="flex flex-col gap-4 max-w-[420px]">
+      <div className="flex flex-col gap-4">
+        <div className="pt-3 px-3 bg-[#2b2b2b] rounded-t-2xl">
+          <img alt={alt} src={src} className="rounded-t-2xl w-full" />
         </div>
-      </CardBody>
-    </CardContainer>
+        <h1 className="font-semibold flex items-center">
+          <span className="whitespace-nowrap text-xl">{title}</span>
+          <span className="border-[#797979] mx-4 border-[1px] flex-1"></span>
+          <div className="flex gap-2 text-xl">
+            <FaGithub />
+            <FaExternalLinkAlt />
+          </div>
+        </h1>
+        <div className="flex flex-wrap gap-2 text-sm">
+          <span className="p-2 bg-[#2b2b2b] rounded-lg">TypeScript</span>
+          <span className="p-2 bg-[#2b2b2b] rounded-lg">TypeScript</span>
+          <span className="p-2 bg-[#2b2b2b] rounded-lg">TypeScript</span>
+        </div>
+        <p className="text-[15px] overflow-hidden text-ellipsis line-clamp-5">
+          {description}
+        </p>
+        <button className="text-purple mt-[-10px] w-fit">Learn more..</button>
+      </div>
+    </div>
   );
 };

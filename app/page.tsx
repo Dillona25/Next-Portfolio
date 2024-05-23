@@ -1,3 +1,4 @@
+import { Contact } from "@/Components/Contact";
 import { Grid } from "@/Components/Grid";
 import { Hero } from "@/Components/Hero";
 import { Projects } from "@/Components/Projects";
@@ -12,8 +13,9 @@ export default function Home() {
         <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
-        {/* <Projects />
-        <Testimonials /> */}
+        <Projects />
+        <Testimonials />
+        <Contact />
       </div>
     </main>
   );

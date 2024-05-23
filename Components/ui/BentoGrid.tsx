@@ -3,7 +3,6 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
 import { Button } from "./Button";
 import { FaLocationArrow } from "react-icons/fa6";
-import { GoArrowRight } from "react-icons/go";
 
 export const BentoGrid = ({
   className,
@@ -167,12 +166,6 @@ export const BentoGridItem = ({
                       GraphQL
                     </span>
                   </div>
-                </div>
-                <div className="flex items-center gap-4 mt-5">
-                  <p className="font-semibold text-purple text-sm sm:text-base">
-                    My links
-                  </p>
-                  <GoArrowRight className="text-purple" />
                 </div>
               </div>
             </>

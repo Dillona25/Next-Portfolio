@@ -1,16 +1,21 @@
-import { InfiniteMovingCards } from "./ui/MovingCards";
+"use client";
+
 import React from "react";
+
 import { testimonials } from "@/data/data";
+import { InfiniteMovingCards } from "./ui/MovingCards";
 
 export const Testimonials = () => {
   return (
     <section id="testimonials" className="py-20 relative">
-      <h1 className="flex items-center text-left font-bold text-[40px] leading-[40px] md:text-5xl lg:text-6xl pb-5 sm:pb-10">
-        <span className="border-[#797979] mr-4 border-[1px] w-full"></span>
-        Testimonials<span className="text-purple">.</span>
-      </h1>
-      <div className="flex flex-col items-center mt-5">
-        <div className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden">
+      <div className="flex gap-4 items-center">
+        <span className="border-[#797979] ml-2 border-[1px] w-full"></span>
+        <h1 className="text-left font-bold text-[40px] leading-[40px] md:text-5xl lg:text-6xl pb-5 sm:pb-10 whitespace-nowrap">
+          Testimonials<span className="text-purple">.</span>
+        </h1>
+      </div>
+      <div className="flex flex-col items-center max-lg:mt-10">
+        <div className="h-fit md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden">
           <InfiniteMovingCards
             items={testimonials}
             direction="right"
