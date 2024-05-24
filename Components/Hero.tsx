@@ -24,7 +24,7 @@ export const Hero = () => {
           <p className="uppercase tracking-widest text-xs text-center text-blue-100">
             Created with Next.js & Aceternity UI
           </p>
-          <a href="#projects">
+          <a href="#about">
             <Button
               otherClasses="backdrop-blur-lg mx-auto"
               title="Explore more"

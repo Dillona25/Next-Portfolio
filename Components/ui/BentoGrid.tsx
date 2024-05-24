@@ -89,7 +89,7 @@ export const BentoGridItem = ({
             } group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10`
           )}
         >
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-xs md:text-sm text-[#dadada] z-10">
+          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-xs  text-[#dadada] z-10">
             {description}
           </div>
 
@@ -139,31 +139,31 @@ export const BentoGridItem = ({
               <div>
                 <div className="flex flex-col gap-2 pb-5">
                   <div className="flex justify-between text-[15px] sm:text-[18px] font-bold">
-                    <h2>Slopopedia, NPO</h2>
+                    <h2>TripleTen</h2>
                     <p>2024</p>
                   </div>
                   <div className="flex justify-between text-[15px] sm:text-[18px] font-bold text-purple">
-                    <h2>Software Engineer</h2>
+                    <h2>Software Engineering Tutor</h2>
                     <p>Remote</p>
                   </div>
                   <p className="w-full text-[15px] md:text-base">
-                    Worked in a team of six engineers to streamline development
-                    processes and enhance user experience through Agile
-                    methodologies, CI/CD pipeline practices, front-end component
-                    building, and efficient data manipulation with GraphQL.
+                    Worked very closely with students of TripleTens Software
+                    Engineering bootcamp by providing tailored teaching
+                    strategies to help explain and debug complex issues in their
+                    code.
                   </p>
                   <div className="flex gap-2 mt-2">
                     <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
-                      TypeScript
+                      JavaScript
                     </span>
                     <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
                       React.js
                     </span>
                     <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
-                      Tailwind
+                      Node.js
                     </span>
                     <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
-                      GraphQL
+                      Express.js
                     </span>
                   </div>
                 </div>
@@ -200,12 +200,14 @@ export const BentoGridItem = ({
             </div>
           )}
           {id === 6 && (
-            <Button
-              title="Contact"
-              otherClasses="w-fit m-auto"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
+            <a href="#contact">
+              <Button
+                title="Contact"
+                otherClasses="w-fit m-auto"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
           )}
         </div>
       </div>

@@ -7,10 +7,10 @@ import { InfiniteMovingCards } from "./ui/MovingCards";
 
 export const Testimonials = () => {
   return (
-    <section id="testimonials" className="py-20 relative">
-      <div className="flex gap-4 items-center">
+    <section id="testimonials" className="pb-36 relative">
+      <div className="flex gap-4 items-center sm:pb-10">
         <span className="border-[#797979] ml-2 border-[1px] w-full"></span>
-        <h1 className="text-left font-bold text-[40px] leading-[40px] md:text-5xl lg:text-6xl pb-5 sm:pb-10 whitespace-nowrap">
+        <h1 className="text-left font-bold text-[40px] leading-[40px] md:text-5xl lg:text-6xl whitespace-nowrap">
           Testimonials<span className="text-purple">.</span>
         </h1>
       </div>

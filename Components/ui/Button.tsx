@@ -2,18 +2,18 @@ export const Button = ({
   title,
   icon,
   position,
-  handleClick,
+  onClick,
   otherClasses,
 }: {
   title: string;
   icon?: React.ReactNode;
   position?: string;
-  handleClick?: () => void;
+  onClick?: () => void;
   otherClasses?: string;
 }) => {
   return (
     <button
-      onClick={handleClick}
+      onClick={onClick}
       className={`py-3 bg-[#525252] mt-6 sm:py-4 px-7 rounded-lg justify-center border border-gray-300 flex items-center gap-2 text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md ${otherClasses}`}
     >
       {position === "left" && icon}

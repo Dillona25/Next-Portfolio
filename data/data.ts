@@ -1,6 +1,6 @@
 import AviNews from "../public/AviNews.png";
 import US from "../public/Us.png";
-import WTW from "../public/WTW.png";
+import Flight from "../public/Flight.png";
 
 export const navItems = [
   { name: "About", link: "#about" },
@@ -15,8 +15,11 @@ export const AviNewsData = {
   title: "AviNews",
   description:
     "From concept to reality, AviNews is my best project yet. A full-stack website connected to an API that allows users to read up on the most recent aviation related news. Created using TypeScript, tailwind CSS, Express.js and MongoDB. Users are able to make an account, edit their profile, save articles, and delete articles.",
-  buttonOneText: "View site",
-  buttonTwoText: "Code",
+  Github: "https://github.com/Dillona25/AviNews",
+  site: "https://www.avinews.twilightparadox.com/",
+  stack1: "TypeScript",
+  stack2: "React.js",
+  stack3: "Express.js",
 };
 
 export const AroundTheUsData = {
@@ -25,18 +28,24 @@ export const AroundTheUsData = {
   title: "Around The Us",
   description:
     "Around the PNW is a project that was crafted purely with JavaScript. With a high focus in OOP the user is greeted with a stunning aesthetic website. The website is a social media page that allows the user to make it their own! From editing the profile, adding a new profile photo, and adding or deleting photos in their feed.",
-  buttonOneText: "View site",
-  buttonTwoText: "Code",
+  Github: "https://github.com/Dillona25/AroundThePNW",
+  site: "https://dillona25.github.io/AroundThePNW/",
+  stack1: "HTML/CSS",
+  stack2: "JavaScript",
+  stack3: "WebPack",
 };
 
-export const WTWData = {
-  src: WTW.src,
-  alt: "Image Of What To Wear",
-  title: "What To Wear",
+export const TrackerData = {
+  src: Flight.src,
+  alt: "Image Of Flight Tracker",
+  title: "Flight Tracker",
   description:
-    "What to wear is a full-stack application. The app allows users to make a profile with a custom name, avatar and closet. Users will be recommened clothes that they have uploaded to their closet based on the outside weather. The project was made using React.js, Express, MongoDB and hosted with Google Cloud. A link to BE code can be found in the Read.me",
-  buttonOneText: "View site",
-  buttonTwoText: "Code",
+    "Worked in a team of 3 other Engineers to create Flight Tracker. A fully responsive website that allows users to track REAL flights from anywhere. Whether you are expecting a guest, or flying yourself, you and get 24/7 flight status. Connected to multiple 3rd party APIs to fetch airport and airline data",
+  Github: "https://github.com/Dillona25/flight-checker",
+  site: "https://flightchecker.netlify.app/",
+  stack1: "HTML",
+  stack2: "Tailwind",
+  stack3: "JavaScript",
 };
 
 export const gridItems = [
