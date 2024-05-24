@@ -53,12 +53,9 @@ export const ProjectCard = ({
         <p className="text-[15px] overflow-hidden text-ellipsis line-clamp-5">
           {description}
         </p>
-        <button
-          {...(AviNewsData ? handleModalOne : "")}
-          className="text-purple mt-[-10px] w-fit"
-        >
+        <a href={Github} className="text-purple mt-[-10px] w-fit">
           Learn more..
-        </button>
+        </a>
       </div>
     </div>
   );
