@@ -1,6 +1,9 @@
+import { AviNewsData } from "@/data/data";
+import { ReactNode } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 export const ProjectCard = ({
+  className,
   src,
   alt,
   title,
@@ -10,7 +13,9 @@ export const ProjectCard = ({
   stack1,
   stack2,
   stack3,
+  handleModalOne,
 }: {
+  className?: ReactNode;
   src: string;
   alt: string;
   title: string;
@@ -20,9 +25,10 @@ export const ProjectCard = ({
   stack1: string;
   stack2: string;
   stack3: string;
+  handleModalOne?: () => void;
 }) => {
   return (
-    <div className="flex flex-col gap-4 max-w-[420px]">
+    <div className={`flex flex-col gap-4 max-w-[420px] ${className}`}>
       <div className="flex flex-col gap-4">
         <div className="pt-3 px-3 bg-[#2b2b2b] rounded-t-2xl">
           <img alt={alt} src={src} className="rounded-t-2xl w-full" />
@@ -47,7 +53,12 @@ export const ProjectCard = ({
         <p className="text-[15px] overflow-hidden text-ellipsis line-clamp-5">
           {description}
         </p>
-        <button className="text-purple mt-[-10px] w-fit">Learn more..</button>
+        <button
+          {...(AviNewsData ? handleModalOne : "")}
+          className="text-purple mt-[-10px] w-fit"
+        >
+          Learn more..
+        </button>
       </div>
     </div>
   );

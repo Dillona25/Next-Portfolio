@@ -3,7 +3,11 @@ import { ProjectCard } from "./ui/ProjectCard";
 import { AviNewsData, AroundTheUsData, TrackerData } from "@/data/data";
 import { FaLocationArrow } from "react-icons/fa6";
 
-export const Projects = () => {
+export const Projects = ({
+  handleModalOne,
+}: {
+  handleModalOne?: () => void;
+}) => {
   return (
     <div className="relative flex flex-col gap-10 pb-36" id="projects">
       <div className="flex gap-4 items-center sm:pb-10">
@@ -13,7 +17,7 @@ export const Projects = () => {
         <span className="border-[#797979] ml-2 border-[1px] w-full"></span>
       </div>
       <div className="flex gap-10 flex-wrap justify-center">
-        <ProjectCard {...AviNewsData} />
+        <ProjectCard handleModalOne={handleModalOne} {...AviNewsData} />
         <ProjectCard {...AroundTheUsData} />
         <ProjectCard {...TrackerData} />
       </div>
