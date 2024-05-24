@@ -9,7 +9,6 @@ import { Button } from "./ui/Button";
 import { GoArrowRight } from "react-icons/go";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { useForm, SubmitHandler } from "react-hook-form";
 
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
@@ -118,7 +117,6 @@ export function Contact({
             <Label htmlFor="message">Your Message</Label>
             <Textarea
               required
-              type="text"
               id="message"
               placeholder="Your message 😁"
               name="message"
