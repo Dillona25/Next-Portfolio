@@ -1,5 +1,5 @@
 import { Modal } from "./ui/Modal";
-import EmailSent from "../public/EmailSent.png";
+import EmailSent from "../public/images/EmailSent.png";
 import { Button } from "./ui/Button";
 import { FaRegThumbsUp } from "react-icons/fa";
 import { IoIosCloseCircle } from "react-icons/io";

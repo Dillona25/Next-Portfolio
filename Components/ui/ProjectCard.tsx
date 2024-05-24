@@ -13,7 +13,6 @@ export const ProjectCard = ({
   stack1,
   stack2,
   stack3,
-  handleModalOne,
 }: {
   className?: ReactNode;
   src: string;
@@ -53,7 +52,11 @@ export const ProjectCard = ({
         <p className="text-[15px] overflow-hidden text-ellipsis line-clamp-5">
           {description}
         </p>
-        <a href={Github} className="text-purple mt-[-10px] w-fit">
+        <a
+          href={Github}
+          target="_blank"
+          className="text-purple mt-[-10px] w-fit"
+        >
           Learn more..
         </a>
       </div>

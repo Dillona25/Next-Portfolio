@@ -1,7 +1,7 @@
 import { Button } from "./ui/Button";
 import { TextGenerateEffect } from "./ui/TextGenerate";
 import { FaLocationArrow } from "react-icons/fa6";
-import Portrait from "../public/Portrait.jpeg";
+import Portrait from "../public/images/Portrait.jpeg";
 
 export const Hero = () => {
   return (
@@ -17,7 +17,7 @@ export const Hero = () => {
       </div>
       <div className="flex flex-col items-center justify-center relative z-10">
         <div className="max-w-[900px]">
-          <p className=" text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+          <p className="text-center relative md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hello 👋 Im Dillon, A Full Stack Developer
           </p>
           <TextGenerateEffect words="Transforming Concepts into Seamless User Experiences" />

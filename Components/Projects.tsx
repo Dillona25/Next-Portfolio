@@ -2,6 +2,7 @@ import { Button } from "./ui/Button";
 import { ProjectCard } from "./ui/ProjectCard";
 import { AviNewsData, AroundTheUsData, TrackerData } from "@/data/data";
 import { FaLocationArrow } from "react-icons/fa6";
+import { Reveal } from "./ux/Reveal";
 
 export const Projects = ({
   handleModalOne,

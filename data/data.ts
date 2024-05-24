@@ -1,6 +1,6 @@
-import AviNews from "../public/AviNews.png";
-import US from "../public/Us.png";
-import Flight from "../public/Flight.png";
+import AviNews from "../public/images/AviNews.png";
+import US from "../public/images/Us.png";
+import Flight from "../public/images/Flight.png";
 
 export const navItems = [
   { name: "About", link: "#about" },
@@ -54,7 +54,7 @@ export const gridItems = [
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
-    img: "/B1.jpg",
+    img: "/images/B1.jpg",
     spareImg: "",
   },
   {
@@ -84,8 +84,8 @@ export const gridItems = [
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
+    img: "/images/grid.svg",
+    spareImg: "/images/b4.svg",
   },
 
   {
@@ -95,8 +95,8 @@ export const gridItems = [
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
+    img: "/images/b5.svg",
+    spareImg: "/images/grid.svg",
   },
   {
     id: 6,
@@ -116,13 +116,13 @@ export const testimonials = [
       "Dillon, whom I tutored at Tripleten, is an exceptional student with a remarkable ability to grasp new concepts swiftly, particularly in our challenging field. Beyond his tech proficiency, Dillon possesses effective communication skills that significantly enhance the learning environment. Notably, he excels in uniting people with his infectious positivity and talent for inspiring others to excel. Dillon demonstrates strong teamwork and leadership qualities, making him a valuable addition to any tech team or project.",
     name: "Max Jacobsen",
     title: "Senior Software Engineer",
-    image: "/Max J.jpeg",
+    image: "/images/Max J.jpeg",
   },
   {
     quote:
       "During TripleTen's August Code Jam, I collaborated with Dillon and three other developers to create the Flight Checker, a project spearheaded by Dillon himself. His exceptional curiosity and knack for generating unique ideas were evident throughout our collaboration. Dillon displayed a sincere eagerness to learn and embrace new tools and languages, contributing to the project's success. His commitment ensured a seamless transition from concept to execution making our journey efficient and rewarding. I wholeheartedly endorse Dillon to anyone in search of a dedicated, inquisitive, and innovative developer for their team or project.",
     name: "Anderson Marques",
     title: "React Developer",
-    image: "/Anderson.jpeg",
+    image: "/images/Anderson.jpeg",
   },
 ];
