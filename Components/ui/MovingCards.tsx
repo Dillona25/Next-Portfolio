@@ -10,7 +10,6 @@ export const InfiniteMovingCards = ({
   speed = "fast",
   pauseOnHover = true,
   className,
-  image,
 }: {
   items: {
     quote: string;
