@@ -58,6 +58,7 @@ export const ProjectCard = ({
         >
           Learn more..
         </a>
+        {/* In the future create a modal extending this component + some more conntent */}
       </div>
     </div>
   );

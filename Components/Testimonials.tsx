@@ -1,7 +1,5 @@
 "use client";
-
 import React from "react";
-
 import { testimonials } from "@/data/data";
 import { InfiniteMovingCards } from "./ui/MovingCards";
 
