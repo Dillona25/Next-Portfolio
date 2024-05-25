@@ -60,6 +60,7 @@ export const InfiniteMovingCards = ({
       }
     }
   };
+
   const getSpeed = () => {
     if (containerRef.current) {
       if (speed === "fast") {
@@ -69,8 +70,14 @@ export const InfiniteMovingCards = ({
       } else {
         containerRef.current.style.setProperty("--animation-duration", "80s");
       }
+      // Set different speeds for mobile and desktop
+      const mobileMediaQuery = window.matchMedia("(max-width: 600px)");
+      if (mobileMediaQuery.matches) {
+        containerRef.current.style.setProperty("--animation-duration", "20s");
+      }
     }
   };
+
   return (
     <div
       ref={containerRef}
