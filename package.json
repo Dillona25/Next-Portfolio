@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "tailwindcss build styles/globals.css -o public/styles.css"
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
