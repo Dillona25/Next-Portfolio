@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FormEvent } from "react";
 import { Label } from "../Components/ui/Label";
 import { Input } from "../Components/ui/Input";
 import { cn } from "@/utils/cn";
@@ -14,6 +14,13 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ErrorMessage } from "./ui/ErrorMessage";
 
+type FormData = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  message: string;
+};
+
 export function Contact({
   handleMessageModal,
 }: {
@@ -21,9 +28,7 @@ export function Contact({
 }) {
   const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
+  const sendEmail = () => {
     if (!form.current) return;
 
     emailjs
@@ -45,8 +50,9 @@ export function Contact({
   const {
     register,
     setValue,
-    handleSubmit,
+    reset,
     formState: { errors, isValid },
+    handleSubmit,
   } = useForm({
     defaultValues: {
       firstName: "",
@@ -55,6 +61,12 @@ export function Contact({
       message: "",
     },
   });
+
+  const onSubmit = () => {
+    sendEmail();
+    if (handleMessageModal) handleMessageModal();
+    reset();
+  };
 
   return (
     <div
@@ -93,7 +105,7 @@ export function Contact({
         </div>
       </div>
       <div className="max-w-xl w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input dark:bg-black-100">
-        <form ref={form} className="my-8" onSubmit={sendEmail}>
+        <form ref={form} className="my-8" onSubmit={handleSubmit(onSubmit)}>
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
             <LabelInputContainer>
               <Label htmlFor="firstname">First name</Label>
