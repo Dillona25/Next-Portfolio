@@ -104,7 +104,7 @@ export function Contact({
           </div>
         </div>
       </div>
-      <div className="max-w-xl w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input dark:bg-black-100">
+      <div className="max-w-xl w-full mx-auto rounded-none md:rounded-2xl  md:p-8 shadow-input dark:bg-black-100">
         <form ref={form} className="my-8" onSubmit={handleSubmit(onSubmit)}>
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
             <LabelInputContainer>

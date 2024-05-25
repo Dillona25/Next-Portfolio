@@ -32,7 +32,9 @@ export const ProjectCard = ({
           <img alt={alt} src={src} className="rounded-t-2xl w-full" />
         </div>
         <h1 className="font-semibold flex items-center">
-          <span className="whitespace-nowrap text-xl">{title}</span>
+          <span className="whitespace-nowrap font-bold text-lg sm:text-xl">
+            {title}
+          </span>
           <span className="border-[#797979] mx-4 border-[1px] flex-1"></span>
           <div className="flex gap-2 text-xl">
             <a href={Github} target="_blank">
@@ -48,13 +50,13 @@ export const ProjectCard = ({
           <span className="p-2 bg-[#2b2b2b] rounded-lg">{stack2}</span>
           <span className="p-2 bg-[#2b2b2b] rounded-lg">{stack3}</span>
         </div>
-        <p className="text-[15px] overflow-hidden text-ellipsis line-clamp-5">
+        <p className="text-sm sm:text-base overflow-hidden text-ellipsis line-clamp-5">
           {description}
         </p>
         <a
           href={Github}
           target="_blank"
-          className="text-purple mt-[-10px] w-fit"
+          className="text-purple text-sm sm:text-base mt-[-10px] w-fit"
         >
           Learn more..
         </a>
