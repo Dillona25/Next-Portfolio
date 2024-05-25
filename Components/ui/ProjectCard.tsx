@@ -1,4 +1,3 @@
-import { AviNewsData } from "@/data/data";
 import { ReactNode } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 

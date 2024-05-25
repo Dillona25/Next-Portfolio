@@ -2,7 +2,6 @@ import { Button } from "./ui/Button";
 import { TextGenerateEffect } from "./ui/TextGenerate";
 import { FaLocationArrow } from "react-icons/fa6";
 import Portrait from "../public/images/Portrait.jpeg";
-import Image from "next/image";
 
 export const Hero = () => {
   return (
