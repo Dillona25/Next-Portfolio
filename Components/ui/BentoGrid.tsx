@@ -50,7 +50,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 bg-[#2b2b2b] relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col ",
+        "row-span-1 bg-[#2b2b2b] relative overflow-hidden rounded-3xl border border-white/[0.1] lg:group/bento justify-between flex flex-col ",
         className
       )}
     >
@@ -91,65 +91,59 @@ export const BentoGridItem = ({
             } group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10`
           )}
         >
-          <Reveal>
-            <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-xs  text-[#dadada] z-10">
-              {description}
-            </div>
-          </Reveal>
-          <Reveal>
-            <div
-              className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
-            >
-              {title}
-            </div>
-          </Reveal>
+          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-xs  text-[#dadada] z-10">
+            {description}
+          </div>
+
+          <div
+            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+          >
+            {title}
+          </div>
           {id === 1 && (
             <>
-              <div>
-                <h1 className="flex items-center text-left font-bold leading-[40px] text-4xl lg:text-5xl pb-5 sm:pb-10">
-                  Experience<span className="text-purple">.</span>
-                  <span className="border-[#797979] ml-4 border-[1px] w-full"></span>
-                </h1>
-                <div className="flex flex-col gap-2 border-b-[1px] border-[#797979] pb-5">
-                  <div className="flex justify-between text-[15px] sm:text-[18px] font-bold">
-                    <Reveal>
-                      <h2>Slopopedia, NPO</h2>
-                    </Reveal>
-                    <Reveal>
-                      <p>2024</p>
-                    </Reveal>
-                  </div>
-                  <div className="flex justify-between text-[15px] sm:text-[18px] font-bold text-purple">
-                    <Reveal>
-                      <h2>Software Engineer</h2>
-                    </Reveal>
-                    <Reveal>
-                      <p>Remote</p>
-                    </Reveal>
-                  </div>
+              <h1 className="flex items-center text-left font-bold leading-[40px] mt-[-50px] text-4xl lg:text-5xl sm:mt-[-75px]">
+                Experience<span className="text-purple">.</span>
+                <span className="border-[#797979] ml-4 border-[1px] w-full"></span>
+              </h1>
+              <div className="flex flex-col gap-2 border-b-[1px] border-[#797979] pb-5">
+                <div className="flex justify-between text-[15px] sm:text-[18px] font-bold">
                   <Reveal>
-                    <p className="w-full text-[15px] md:text-base">
-                      Worked in a team of six engineers to streamline
-                      development processes and enhance user experience through
-                      Agile methodologies, CI/CD pipeline practices, front-end
-                      component building, and efficient data manipulation with
-                      GraphQL.
-                    </p>
+                    <h2>Slopopedia, NPO</h2>
                   </Reveal>
-                  <div className="flex gap-2 mt-2">
-                    <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
-                      TypeScript
-                    </span>
-                    <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
-                      React.js
-                    </span>
-                    <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
-                      Tailwind
-                    </span>
-                    <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
-                      GraphQL
-                    </span>
-                  </div>
+                  <Reveal>
+                    <p>2024</p>
+                  </Reveal>
+                </div>
+                <div className="flex justify-between text-[15px] sm:text-[18px] font-bold text-purple">
+                  <Reveal>
+                    <h2>Software Engineer</h2>
+                  </Reveal>
+                  <Reveal>
+                    <p>Remote</p>
+                  </Reveal>
+                </div>
+                <Reveal>
+                  <p className="w-full text-[15px] md:text-base">
+                    Worked in a team of six engineers to streamline development
+                    processes and enhance user experience through Agile
+                    methodologies, CI/CD pipeline practices, front-end component
+                    building, and efficient data manipulation with GraphQL.
+                  </p>
+                </Reveal>
+                <div className="flex gap-2 mt-2">
+                  <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
+                    TypeScript
+                  </span>
+                  <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
+                    React.js
+                  </span>
+                  <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
+                    Tailwind
+                  </span>
+                  <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
+                    GraphQL
+                  </span>
                 </div>
               </div>
               <div>

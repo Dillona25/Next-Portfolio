@@ -36,7 +36,7 @@ export const ProjectCard = ({
             <span className="whitespace-nowrap text-xl">{title}</span>
           </Reveal>
           <span className="border-[#797979] mx-4 border-[1px] flex-1"></span>
-          <div className="flex gap-2 text-xl">
+          <div className="flex gap-3 text-xl">
             <a href={Github} target="_blank">
               <FaGithub className="hover:cursor-pointer hover:scale-110 ease-in-out duration-75" />
             </a>
