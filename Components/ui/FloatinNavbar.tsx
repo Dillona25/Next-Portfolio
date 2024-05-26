@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+
+import React, { useState, useEffect } from "react";
 import {
   motion,
   AnimatePresence,
@@ -23,8 +24,12 @@ export const FloatingNav = ({
   className?: string;
 }) => {
   const { scrollYProgress } = useScroll();
-
   const [visible, setVisible] = useState(true);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
@@ -67,27 +72,36 @@ export const FloatingNav = ({
           border: "1px solid rgba(255, 255, 255, 0.125)",
         }}
       >
-        {navItems.map((navItem: any, idx: number) => (
-          <ScrollLink
-            to={navItem.scrollPath}
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={navItem.offset}
-            key={idx}
-          >
-            <Link
-              key={`link=${idx}`}
-              href={navItem.link}
-              className={cn(
-                "relative dark:text-neutral-50 items-center  flex space-x-1 text-neutral-600 hover:text-neutral-500 hover:scale-110 ease-in-out duration-75"
-              )}
-            >
-              <span className="block sm:hidden">{navItem.icon}</span>
-              <span className=" text-sm !cursor-pointer">{navItem.name}</span>
-            </Link>
-          </ScrollLink>
-        ))}
+        {isClient &&
+          navItems.map((navItem: any, idx: number) =>
+            navItem.scrollPath ? (
+              <ScrollLink
+                key={`scroll-${idx}`}
+                to={navItem.scrollPath}
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={navItem.offset}
+                className={cn(
+                  "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 hover:text-neutral-500 hover:scale-110 ease-in-out duration-75 cursor-pointer"
+                )}
+              >
+                <span className="block sm:hidden">{navItem.icon}</span>
+                <span className="text-sm">{navItem.name}</span>
+              </ScrollLink>
+            ) : (
+              <Link
+                key={`link-${idx}`}
+                href={navItem.link}
+                className={cn(
+                  "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 hover:text-neutral-500 hover:scale-110 ease-in-out duration-75"
+                )}
+              >
+                <span className="block sm:hidden">{navItem.icon}</span>
+                <span className="text-sm">{navItem.name}</span>
+              </Link>
+            )
+          )}
       </motion.div>
     </AnimatePresence>
   );
