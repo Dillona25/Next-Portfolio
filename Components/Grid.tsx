@@ -4,10 +4,9 @@ import { gridItems } from "@/data/data";
 
 export const Grid = () => {
   return (
-    <section id="about" className="pt-20 pb-36">
+    <section id="about" className="pt-14 md:pt-20 md:pb-36">
       <div className="flex items-center relative text-center font-bold text-[40px] leading-[40px] md:text-5xl lg:text-6xl pb-5 sm:pb-10">
-        <span className="border-[#797979] mr-4 border-[1px] w-full"></span>
-        <h1>About</h1>
+        <h1 className="whitespace-nowrap">About me</h1>
         <span className="text-purple">.</span>
         <span className="border-[#797979] ml-4 border-[1px] w-full"></span>
       </div>

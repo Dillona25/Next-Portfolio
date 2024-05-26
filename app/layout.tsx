@@ -8,6 +8,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Dillon Arnolds Portfolio",
   description: "Dillon Arnolds Modern Portfolio",
+  keywords: "software, engineer, developer, web, portfolio, resume, career",
+  authors: { name: "Dillon Arnold" },
+  creator: "Dillon Arnold",
+  publisher: "Dillon Arnold",
 };
 
 export default function RootLayout({

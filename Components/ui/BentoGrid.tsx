@@ -4,7 +4,6 @@ import { GlobeDemo } from "./GridGlobe";
 import { Button } from "./Button";
 import { FaLocationArrow } from "react-icons/fa6";
 import { Link } from "react-scroll";
-import { Reveal } from "../ux/Reveal";
 
 export const BentoGrid = ({
   className,
@@ -91,18 +90,14 @@ export const BentoGridItem = ({
             } group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10`
           )}
         >
-          <Reveal>
-            <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-xs  text-[#dadada] z-10">
-              {description}
-            </div>
-          </Reveal>
-          <Reveal>
-            <div
-              className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
-            >
-              {title}
-            </div>
-          </Reveal>
+          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-xs  text-[#dadada] z-10">
+            {description}
+          </div>
+          <div
+            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+          >
+            {title}
+          </div>
           {id === 1 && (
             <>
               <h1 className="flex items-center text-left font-bold leading-[40px] mt-[-50px] text-4xl lg:text-5xl sm:mt-[-75px]">
