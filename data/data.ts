@@ -3,10 +3,15 @@ import US from "../public/images/Us.png";
 import Flight from "../public/images/Flight.png";
 
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
+  { name: "About", link: "#about", scrollPath: "about", offset: 60 },
+  { name: "Projects", link: "#projects", scrollPath: "projects", offset: -20 },
+  {
+    name: "Testimonials",
+    link: "#testimonials",
+    scrollPath: "testimonials",
+    offset: -10,
+  },
+  { name: "Contact", link: "#contact", scrollPath: "contact", offset: -10 },
 ];
 
 export const AviNewsData = {

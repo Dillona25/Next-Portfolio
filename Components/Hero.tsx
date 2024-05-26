@@ -2,6 +2,7 @@ import { Button } from "./ui/Button";
 import { TextGenerateEffect } from "./ui/TextGenerate";
 import { FaLocationArrow } from "react-icons/fa6";
 import Portrait from "../public/images/Portrait.jpeg";
+import { Link } from "react-scroll";
 
 export const Hero = () => {
   return (
@@ -25,12 +26,20 @@ export const Hero = () => {
             Created with Next.js & Aceternity UI
           </p>
           <a href="#about">
-            <Button
-              otherClasses="backdrop-blur-lg mx-auto"
-              title="Explore more"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={65}
+            >
+              <Button
+                otherClasses="backdrop-blur-lg mx-auto"
+                title="Explore more"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </Link>
           </a>
         </div>
       </div>

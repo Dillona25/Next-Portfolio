@@ -13,6 +13,7 @@ import { useForm } from "react-hook-form";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ErrorMessage } from "./ui/ErrorMessage";
+import { Reveal } from "./ux/RevealAnimation";
 
 type FormData = {
   firstName: string;
@@ -78,28 +79,39 @@ export function Contact({
           What are you waiting for?{" "}
           <span className="text-purple">Lets chat!</span>
         </h1>
+
         <div className="flex gap-2 items-center md:hidden pb-5">
           <h1 className="text-left font-bold text-[40px] leading-[45px] md:text-5xl lg:text-6xl sm:pb-10 whitespace-nowrap">
             Lets chat<span className="text-purple">.</span>
           </h1>
           <span className="border-[#797979] ml-2 border-[1px] w-full"></span>
         </div>
-        <p className="uppercase tracking-widest text-xs md:mt-[-20px] text-blue-100">
-          Check out my links below if thats more what youre after :)
-        </p>
-        <div className="flex items-center gap-2 mt-5">
-          <p className="font-semibold text-purple text-sm sm:text-base">
-            My links
+        <Reveal>
+          <p className="uppercase tracking-widest text-xs md:mt-[-20px] text-blue-100">
+            Check out my links below if thats more what youre after :)
           </p>
+        </Reveal>
+        <div className="flex items-center gap-2 mt-5">
+          <Reveal>
+            <p className="font-semibold text-purple text-sm sm:text-base">
+              My links
+            </p>
+          </Reveal>
           <div className="flex gap-2">
             <div className="flex items-center mr-5">
-              <GoArrowRight className="text-purple" />
+              <Reveal>
+                <GoArrowRight className="text-purple" />
+              </Reveal>
             </div>
             <a href="https://github.com/Dillona25" target="_blank">
-              <FaGithubSquare className="text-[25px] sm:text-[30px] hover:scale-110 ease-in-out duration-[.5s] hover:cursor-pointer" />
+              <Reveal>
+                <FaGithubSquare className="text-[25px] sm:text-[30px] hover:scale-110 ease-in-out duration-[.5s] hover:cursor-pointer" />
+              </Reveal>
             </a>
             <a href="https://www.linkedin.com/in/dillonarnold/" target="_blank">
-              <FaLinkedin className="text-[25px] sm:text-[30px] hover:scale-110 ease-in-out duration-[.5s] hover:cursor-pointer" />
+              <Reveal>
+                <FaLinkedin className="text-[25px] sm:text-[30px] hover:scale-110 ease-in-out duration-[.5s] hover:cursor-pointer" />
+              </Reveal>
             </a>
           </div>
         </div>

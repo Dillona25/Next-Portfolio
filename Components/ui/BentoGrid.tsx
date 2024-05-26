@@ -3,6 +3,8 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
 import { Button } from "./Button";
 import { FaLocationArrow } from "react-icons/fa6";
+import { Reveal } from "../ux/RevealAnimation";
+import { Link } from "react-scroll";
 
 export const BentoGrid = ({
   className,
@@ -89,15 +91,18 @@ export const BentoGridItem = ({
             } group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10`
           )}
         >
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-xs  text-[#dadada] z-10">
-            {description}
-          </div>
-
-          <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
-          >
-            {title}
-          </div>
+          <Reveal>
+            <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-xs  text-[#dadada] z-10">
+              {description}
+            </div>
+          </Reveal>
+          <Reveal>
+            <div
+              className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+            >
+              {title}
+            </div>
+          </Reveal>
           {id === 1 && (
             <>
               <div>
@@ -107,19 +112,30 @@ export const BentoGridItem = ({
                 </h1>
                 <div className="flex flex-col gap-2 border-b-[1px] border-[#797979] pb-5">
                   <div className="flex justify-between text-[15px] sm:text-[18px] font-bold">
-                    <h2>Slopopedia, NPO</h2>
-                    <p>2024</p>
+                    <Reveal>
+                      <h2>Slopopedia, NPO</h2>
+                    </Reveal>
+                    <Reveal>
+                      <p>2024</p>
+                    </Reveal>
                   </div>
                   <div className="flex justify-between text-[15px] sm:text-[18px] font-bold text-purple">
-                    <h2>Software Engineer</h2>
-                    <p>Remote</p>
+                    <Reveal>
+                      <h2>Software Engineer</h2>
+                    </Reveal>
+                    <Reveal>
+                      <p>Remote</p>
+                    </Reveal>
                   </div>
-                  <p className="w-full text-[15px] md:text-base">
-                    Worked in a team of six engineers to streamline development
-                    processes and enhance user experience through Agile
-                    methodologies, CI/CD pipeline practices, front-end component
-                    building, and efficient data manipulation with GraphQL.
-                  </p>
+                  <Reveal>
+                    <p className="w-full text-[15px] md:text-base">
+                      Worked in a team of six engineers to streamline
+                      development processes and enhance user experience through
+                      Agile methodologies, CI/CD pipeline practices, front-end
+                      component building, and efficient data manipulation with
+                      GraphQL.
+                    </p>
+                  </Reveal>
                   <div className="flex gap-2 mt-2">
                     <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
                       TypeScript
@@ -139,19 +155,29 @@ export const BentoGridItem = ({
               <div>
                 <div className="flex flex-col gap-2 pb-5">
                   <div className="flex justify-between text-[15px] sm:text-[18px] font-bold">
-                    <h2>TripleTen</h2>
-                    <p>2024</p>
+                    <Reveal>
+                      <h2>TripleTen</h2>
+                    </Reveal>
+                    <Reveal>
+                      <p>2024</p>
+                    </Reveal>
                   </div>
                   <div className="flex justify-between text-[15px] sm:text-[18px] font-bold text-purple">
-                    <h2>Software Engineering Tutor</h2>
-                    <p>Remote</p>
+                    <Reveal>
+                      <h2>Software Engineering Tutor</h2>
+                    </Reveal>
+                    <Reveal>
+                      <p>Remote</p>
+                    </Reveal>
                   </div>
-                  <p className="w-full text-[15px] md:text-base">
-                    Worked very closely with students of TripleTens Software
-                    Engineering bootcamp by providing tailored teaching
-                    strategies to help explain and debug complex issues in their
-                    code.
-                  </p>
+                  <Reveal>
+                    <p className="w-full text-[15px] md:text-base">
+                      Worked very closely with students of TripleTens Software
+                      Engineering bootcamp by providing tailored teaching
+                      strategies to help explain and debug complex issues in
+                      their code.
+                    </p>
+                  </Reveal>
                   <div className="flex gap-2 mt-2">
                     <span className="p-2 bg-[#2b2b2b] rounded-md text-xs sm:text-sm">
                       JavaScript
@@ -200,14 +226,14 @@ export const BentoGridItem = ({
             </div>
           )}
           {id === 6 && (
-            <a href="#contact">
+            <Link to="contact" spy={true} smooth={true} duration={500}>
               <Button
                 title="Contact"
                 otherClasses="w-fit m-auto"
                 icon={<FaLocationArrow />}
                 position="right"
               />
-            </a>
+            </Link>
           )}
         </div>
       </div>

@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import { cn } from "@/utils/cn";
+import { Link as ScrollLink } from "react-scroll";
 
 export const FloatingNav = ({
   navItems,
@@ -17,6 +18,7 @@ export const FloatingNav = ({
     name: string;
     link: string;
     icon?: JSX.Element;
+    scrollPath?: string;
   }[];
   className?: string;
 }) => {
@@ -66,16 +68,24 @@ export const FloatingNav = ({
         }}
       >
         {navItems.map((navItem: any, idx: number) => (
-          <Link
-            key={`link=${idx}`}
-            href={navItem.link}
-            className={cn(
-              "relative dark:text-neutral-50 items-center  flex space-x-1 text-neutral-600 hover:text-neutral-500 hover:scale-110 ease-in-out duration-75"
-            )}
+          <ScrollLink
+            to={navItem.scrollPath}
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={navItem.offset}
           >
-            <span className="block sm:hidden">{navItem.icon}</span>
-            <span className=" text-sm !cursor-pointer">{navItem.name}</span>
-          </Link>
+            <Link
+              key={`link=${idx}`}
+              href={navItem.link}
+              className={cn(
+                "relative dark:text-neutral-50 items-center  flex space-x-1 text-neutral-600 hover:text-neutral-500 hover:scale-110 ease-in-out duration-75"
+              )}
+            >
+              <span className="block sm:hidden">{navItem.icon}</span>
+              <span className=" text-sm !cursor-pointer">{navItem.name}</span>
+            </Link>
+          </ScrollLink>
         ))}
       </motion.div>
     </AnimatePresence>
