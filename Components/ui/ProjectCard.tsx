@@ -1,7 +1,6 @@
 import { ReactNode } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { MovingDiv } from "./MovingBoder";
-import { Reveal } from "../ux/RevealAnimation";
 
 export const ProjectCard = ({
   className,
@@ -32,9 +31,7 @@ export const ProjectCard = ({
       <MovingDiv className="p-4 pb-5 bg-[#2b2b2b] rounded-2xl flex flex-col gap-4">
         <img alt={alt} src={src} className="rounded-2xl w-full" />
         <h1 className="font-semibold flex items-center">
-          <Reveal>
-            <span className="whitespace-nowrap text-xl">{title}</span>
-          </Reveal>
+          <span className="whitespace-nowrap text-xl">{title}</span>
           <span className="border-[#797979] mx-4 border-[1px] flex-1"></span>
           <div className="flex gap-3 text-xl">
             <a href={Github} target="_blank">
@@ -50,20 +47,16 @@ export const ProjectCard = ({
           <span className="p-2 bg-[#757575] rounded-lg">{stack2}</span>
           <span className="p-2 bg-[#757575] rounded-lg">{stack3}</span>
         </div>
-        <Reveal>
-          <p className="text-[15px] text-left overflow-hidden text-ellipsis line-clamp-5">
-            {description}
-          </p>
-        </Reveal>
-        <Reveal>
-          <a
-            href={Github}
-            target="_blank"
-            className="text-purple mt-[-10px] w-fit"
-          >
-            Learn more..
-          </a>
-        </Reveal>
+        <p className="text-[15px] text-left overflow-hidden text-ellipsis line-clamp-5">
+          {description}
+        </p>
+        <a
+          href={Github}
+          target="_blank"
+          className="text-purple mt-[-10px] w-fit"
+        >
+          Learn more..
+        </a>
         {/* In the future create a modal extending this component + some more conntent */}
       </MovingDiv>
     </div>
