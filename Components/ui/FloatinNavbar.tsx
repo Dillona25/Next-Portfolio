@@ -74,6 +74,7 @@ export const FloatingNav = ({
             smooth={true}
             duration={500}
             offset={navItem.offset}
+            key={idx}
           >
             <Link
               key={`link=${idx}`}
