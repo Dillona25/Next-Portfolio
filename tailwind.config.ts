@@ -32,7 +32,7 @@ const config = {
       keyframes: {
         scroll: {
           to: {
-            transform: "translateX(-50%)",
+            transform: "translateX(-20%)",
           },
         },
       },
