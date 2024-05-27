@@ -17,7 +17,7 @@ export const Testimonials = () => {
           <InfiniteMovingCards
             items={testimonials}
             direction="right"
-            speed="fast"
+            speed="normal"
           />
         </div>
       </div>
