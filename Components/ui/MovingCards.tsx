@@ -76,7 +76,7 @@ export const InfiniteMovingCards = ({
       // Set different speeds for mobile and desktop
       const mobileMediaQuery = window.matchMedia("(max-width: 600px)");
       if (mobileMediaQuery.matches) {
-        containerRef.current.style.setProperty("--animation-duration", "30s");
+        containerRef.current.style.setProperty("--animation-duration", "20s");
       }
     }
   };
