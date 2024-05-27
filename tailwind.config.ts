@@ -78,7 +78,7 @@ const config = {
         },
         scroll: {
           to: {
-            transform: "translate(calc(-20% - 0.5rem))",
+            transform: "translateX(-50%)",
           },
         },
       },
