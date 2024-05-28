@@ -13,7 +13,7 @@ import { cn } from "@/utils/cn";
 export function MovingDiv({
   borderRadius = "1.75rem",
   children,
-  as: Component = "button",
+  as: Component = "div",
   containerClassName,
   borderClassName,
   duration,

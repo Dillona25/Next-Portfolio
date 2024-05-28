@@ -49,7 +49,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 bg-[#2b2b2b] relative overflow-hidden rounded-3xl border border-white/[0.1] lg:group/bento justify-between flex flex-col ",
+        "row-span-1 bg-[#2b2b2b] relative overflow-hidden rounded-3xl border border-white/[0.1] md:group/bento justify-between flex flex-col ",
         className
       )}
     >
@@ -81,7 +81,6 @@ export const BentoGridItem = ({
             <div className="absolute z-50 inset-0 flex items-center justify-center text-[#dadada] font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
           </BackgroundGradientAnimation>
         )}
-
         <div
           className={cn(
             titleClassName,

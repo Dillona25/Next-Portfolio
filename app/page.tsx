@@ -3,10 +3,11 @@ import { Contact } from "@/Components/Contact";
 import { Grid } from "@/Components/Grid";
 import { Hero } from "@/Components/Hero";
 import { MessageModal } from "@/Components/MessageModal";
+import { MobileTestimonials } from "@/Components/MobileTestimonials";
 import { Projects } from "@/Components/Projects";
 import { Testimonials } from "@/Components/Testimonials";
 import { FloatingNav } from "@/Components/ui/FloatinNavbar";
-import { navItems } from "@/data/data";
+import { navItems, testimonials } from "@/data/data";
 import { useState } from "react";
 
 export default function Home() {
@@ -27,7 +28,8 @@ export default function Home() {
         <Hero />
         <Grid />
         <Projects />
-        <Testimonials />
+        <Testimonials className="hidden md:block" />
+        <MobileTestimonials className="md:hidden" />
         <Contact handleMessageModal={handleMessageModal} />
         {activeModal === "Message" && <MessageModal closeModal={closeModal} />}
       </div>

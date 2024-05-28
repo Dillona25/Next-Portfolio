@@ -1,11 +1,14 @@
 "use client";
-import React from "react";
+import React, { ReactNode } from "react";
 import { testimonials } from "@/data/data";
 import { InfiniteMovingCards } from "./ui/MovingCards";
 
-export const Testimonials = () => {
+export const Testimonials = ({ className }: { className?: ReactNode }) => {
   return (
-    <section id="testimonials" className="pt-14 md:pt-0 md:pb-36 relative">
+    <section
+      id="testimonials"
+      className={`pt-14 md:pt-0 md:pb-36 relative ${className}`}
+    >
       <div className="flex gap-4 items-center sm:pb-10">
         <h1 className="text-left font-bold text-[40px] leading-[40px] md:text-5xl lg:text-6xl whitespace-nowrap">
           Testimonials<span className="text-purple">.</span>
