@@ -27,11 +27,14 @@ export const ProjectCard = ({
   handleModalOne?: () => void;
 }) => {
   return (
-    <div className={`flex flex-col gap-4 max-w-[420px] ${className}`}>
+    <div
+      id="testimonials"
+      className={`flex flex-col gap-4 max-w-[420px] ${className}`}
+    >
       <MovingDiv className="p-4 pb-5 bg-[#2b2b2b] rounded-2xl flex flex-col gap-4">
         <img alt={alt} src={src} className="rounded-2xl w-full" />
-        <h1 className="font-semibold flex items-center">
-          <span className="whitespace-nowrap text-xl">{title}</span>
+        <div className="font-semibold flex items-center">
+          <h1 className="whitespace-nowrap text-xl">{title}</h1>
           <span className="border-[#797979] mx-4 border-[1px] flex-1"></span>
           <div className="flex gap-3 text-xl">
             <a href={Github} target="_blank">
@@ -41,7 +44,7 @@ export const ProjectCard = ({
               <FaExternalLinkAlt className="hover:cursor-pointer hover:scale-110 ease-in-out duration-75" />
             </a>
           </div>
-        </h1>
+        </div>
         <div className="flex flex-wrap gap-2 text-sm">
           <span className="p-2 bg-[#757575] rounded-lg">{stack1}</span>
           <span className="p-2 bg-[#757575] rounded-lg">{stack2}</span>

@@ -29,7 +29,7 @@ export const MobileTestimonials = ({
   const currentTestimonial = testimonials[currentServiceIndex];
 
   return (
-    <div className={`relative pt-14 ${className}`}>
+    <section id="mobileTest" className={`relative pt-14 ${className}`}>
       <div className="flex gap-4 items-center">
         <h1 className="text-left font-bold text-[40px] leading-[40px]">
           Testimonials<span className="text-purple">.</span>
@@ -81,6 +81,6 @@ export const MobileTestimonials = ({
           <FiArrowRight />
         </button>
       </div>
-    </div>
+    </section>
   );
 };

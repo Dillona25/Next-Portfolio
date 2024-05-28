@@ -20,6 +20,7 @@ export const FloatingNav = ({
     link: string;
     icon?: JSX.Element;
     scrollPath?: string;
+    className?: string;
   }[];
   className?: string;
 }) => {
@@ -83,7 +84,8 @@ export const FloatingNav = ({
                 duration={500}
                 offset={navItem.offset}
                 className={cn(
-                  "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 hover:text-neutral-500 hover:scale-110 ease-in-out duration-75 cursor-pointer"
+                  "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 hover:text-neutral-500 hover:scale-110 ease-in-out duration-75 cursor-pointer",
+                  navItem.className
                 )}
               >
                 <span className="block sm:hidden">{navItem.icon}</span>
@@ -94,7 +96,7 @@ export const FloatingNav = ({
                 key={`link-${idx}`}
                 href={navItem.link}
                 className={cn(
-                  "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 hover:text-neutral-500 hover:scale-110 ease-in-out duration-75"
+                  `relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 hover:text-neutral-500 hover:scale-110 ease-in-out duration-75 ${navItem.className}`
                 )}
               >
                 <span className="block sm:hidden">{navItem.icon}</span>

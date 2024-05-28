@@ -1,12 +1,13 @@
 "use client";
 import React, { ReactNode } from "react";
+import { useState, useEffect } from "react";
 import { testimonials } from "@/data/data";
 import { InfiniteMovingCards } from "./ui/MovingCards";
 
 export const Testimonials = ({ className }: { className?: ReactNode }) => {
   return (
     <section
-      id="testimonials"
+      id="test"
       className={`pt-14 md:pt-0 md:pb-36 relative ${className}`}
     >
       <div className="flex gap-4 items-center sm:pb-10">

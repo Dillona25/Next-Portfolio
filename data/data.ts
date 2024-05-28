@@ -7,9 +7,17 @@ export const navItems = [
   { name: "Projects", link: "#projects", scrollPath: "projects", offset: -20 },
   {
     name: "Testimonials",
-    link: "#testimonials",
-    scrollPath: "testimonials",
+    link: "#mobileTest",
+    scrollPath: "mobileTest",
     offset: -10,
+    className: "block md:hidden",
+  },
+  {
+    name: "Testimonials",
+    link: "#test",
+    scrollPath: "test",
+    offset: -10,
+    className: "hidden md:block",
   },
   { name: "Contact", link: "#contact", scrollPath: "contact", offset: -10 },
 ];
@@ -64,7 +72,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "Open and flexible to work in anytime Zones...",
+    title: "Open and flexible to work in any time zones...",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
