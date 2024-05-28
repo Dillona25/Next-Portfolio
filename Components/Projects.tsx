@@ -30,7 +30,7 @@ export const Projects = ({
         className="w-fit mx-auto"
       >
         <Button
-          otherClasses="backdrop-blur-lg"
+          otherClasses="backdrop-blur-lg mt-[-10px]"
           title="Explore more"
           icon={<FaLocationArrow />}
           position="right"
