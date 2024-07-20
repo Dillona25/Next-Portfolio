@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-import { MovingDiv } from "./MovingBoder";
 
 export const ProjectCard = ({
   className,
@@ -31,7 +30,7 @@ export const ProjectCard = ({
       id="testimonials"
       className={`flex flex-col gap-4 max-w-[420px] ${className}`}
     >
-      <MovingDiv className="p-4 pb-5 bg-[#2b2b2b] rounded-2xl flex flex-col gap-4">
+      <div className="p-4 pb-5 bg-[#2b2b2b] rounded-2xl flex flex-col gap-4">
         <img alt={alt} src={src} className="rounded-2xl w-full" />
         <div className="font-semibold flex items-center">
           <h1 className="whitespace-nowrap text-xl">{title}</h1>
@@ -61,7 +60,7 @@ export const ProjectCard = ({
           Learn more..
         </a>
         {/* In the future create a modal extending this component + some more conntent */}
-      </MovingDiv>
+      </div>
     </div>
   );
 };

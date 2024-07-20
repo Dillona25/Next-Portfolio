@@ -25,9 +25,9 @@ export const navItems = [
 export const AviNewsData = {
   src: AviNews.src,
   alt: "Image Of AviNews",
-  title: "AviNews",
+  title: "AeroTrack",
   description:
-    "From concept to reality, AviNews is my best project yet. A full-stack website connected to an API that allows users to read up on the most recent aviation related news. Created using TypeScript, tailwind CSS, Express.js and MongoDB. Users are able to make an account, edit their profile, save articles, and delete articles.",
+    "From concept to reality, AeroTrack is a full-stack website that allows users to read up on the most recent aviation related news and track flights. Created using TypeScript, tailwind CSS, Express.js and MongoDB. The app allows users to save articles, save flights and much more",
   Github: "https://github.com/Dillona25/AviNews",
   site: "https://www.avinews.twilightparadox.com/",
   stack1: "TypeScript",
@@ -60,68 +60,6 @@ export const TrackerData = {
   stack2: "Tailwind",
   stack3: "JavaScript",
 };
-
-export const gridItems = [
-  {
-    id: 1,
-    description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
-    img: "/images/B1.jpg",
-    spareImg: "",
-  },
-  {
-    id: 2,
-    title: "Open and flexible to work in any time zones...",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-center",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/images/grid.svg",
-    spareImg: "/images/b4.svg",
-  },
-
-  {
-    id: 5,
-    title: "Currently building a Website for Premier Cable Services LLC",
-    description: "The Inside Scoop",
-    className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/images/b5.svg",
-    spareImg: "/images/grid.svg",
-  },
-  {
-    id: 6,
-    title: "What are you waiting for, lets chat!",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
-    spareImg: "",
-  },
-];
 
 export const testimonials = [
   {

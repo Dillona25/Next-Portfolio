@@ -1,6 +1,6 @@
 "use client";
+import { Background } from "@/Components/Background";
 import { Contact } from "@/Components/Contact";
-import { Grid } from "@/Components/Grid";
 import { Hero } from "@/Components/Hero";
 import { MessageModal } from "@/Components/MessageModal";
 import { MobileTestimonials } from "@/Components/MobileTestimonials";
@@ -26,7 +26,7 @@ export default function Home() {
       <div className="max-w-[1350px] w-full">
         <FloatingNav navItems={navItems} />
         <Hero />
-        <Grid />
+        <Background />
         <Projects />
         <Testimonials className="hidden md:block" />
         <MobileTestimonials className="md:hidden" />
