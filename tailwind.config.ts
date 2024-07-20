@@ -26,6 +26,7 @@ const config = {
         black: {
           DEFAULT: "#000",
           100: "#1f1f1f",
+          200: "#282828",
         },
         purple: "#CBACF9",
       },

@@ -29,7 +29,10 @@ export const MobileTestimonials = ({
   const currentTestimonial = testimonials[currentServiceIndex];
 
   return (
-    <section id="mobileTest" className={`relative pt-14 ${className}`}>
+    <section
+      id="mobileTest"
+      className={`relative bg-black-200 px-7 ${className}`}
+    >
       <div className="flex gap-4 items-center">
         <h1 className="text-left font-bold text-[40px] leading-[40px]">
           Testimonials<span className="text-purple">.</span>
@@ -37,7 +40,7 @@ export const MobileTestimonials = ({
         <span className="border-[#797979] ml-2 border-[1px] w-full"></span>
       </div>
       <motion.div
-        className="bg-[#2b2b2b] h-fit m-auto p-4 mt-10 rounded-[20px] border border-white/[0.1]"
+        className="bg-black-100 h-fit m-auto p-4 rounded-[20px] border border-white/[0.1]"
         initial={{ x: `${direction === 1 ? "100%" : "-100%"}`, rotate: angle }}
         animate={{ x: "0", rotate: 0 }}
         transition={{

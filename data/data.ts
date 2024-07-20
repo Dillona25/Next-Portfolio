@@ -76,4 +76,11 @@ export const testimonials = [
     title: "React Developer",
     image: "/images/Anderson.jpeg",
   },
+  {
+    quote:
+      "During TripleTen's August Code Jam, I collaborated with Dillon and three other developers to create the Flight Checker, a project spearheaded by Dillon himself. His exceptional curiosity and knack for generating unique ideas were evident throughout our collaboration. Dillon displayed a sincere eagerness to learn and embrace new tools and languages, contributing to the project's success. His commitment ensured a seamless transition from concept to execution making our journey efficient and rewarding. I wholeheartedly endorse Dillon to anyone in search of a dedicated, inquisitive, and innovative developer for their team or project.",
+    name: "Anderson Marques",
+    title: "React Developer",
+    image: "/images/Anderson.jpeg",
+  },
 ];

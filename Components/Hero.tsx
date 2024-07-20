@@ -8,7 +8,7 @@ export const Hero = () => {
   return (
     <div className="flex flex-col lg:flex-row gap-10 justify-center items-center md:h-screen mt-40 mb-40 lg:mt-0 lg:mb-0">
       <div
-        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.02] bg-grid-black-100/[0.2]
+        className="h-full w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.02] bg-grid-black-100/[0.2]
        absolute top-0 left-0 flex items-center justify-center"
       >
         <div

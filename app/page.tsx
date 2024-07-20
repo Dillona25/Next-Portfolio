@@ -22,8 +22,8 @@ export default function Home() {
   };
 
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto px-7 sm:px-10">
-      <div className="max-w-[1350px] w-full">
+    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto">
+      <div className="w-full">
         <FloatingNav navItems={navItems} />
         <Hero />
         <About />
