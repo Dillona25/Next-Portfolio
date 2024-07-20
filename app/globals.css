@@ -14,7 +14,12 @@ h1 {
   @apply leading-[40px];
 }
 
+h3 {
+  @apply md:text-lg;
+  @apply text-base;
+  @apply font-bold;
+}
+
 p {
   @apply text-base;
-  @apply sm:text-lg;
 }
