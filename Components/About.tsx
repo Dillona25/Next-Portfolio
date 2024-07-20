@@ -1,0 +1,155 @@
+import Html from "../assets/Html.svg";
+import Css from "../assets/Css.svg";
+import Tailwind from "../assets/Tailwind.svg";
+import JavaScript from "../assets/JavaScript.svg";
+import TypeScript from "../assets/typescript.svg";
+import Next from "../assets/nextjs2.svg";
+import ReactImg from "../assets/React.svg";
+import NodeJS from "../assets/Node.svg";
+import Mongo from "../assets/Mongo.svg";
+import Cloud from "../assets/Cloud.svg";
+import PHP from "../assets/php.svg";
+import { GoArrowRight } from "react-icons/go";
+import { FaGithubSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+import { HiMiniComputerDesktop } from "react-icons/hi2";
+
+export const About = () => {
+  return (
+    <div className="relative">
+      <div className="flex gap-4 items-center">
+        <h1 className="text-left font-bold text-[40px] leading-[40px] md:text-5xl lg:text-6xl whitespace-nowrap">
+          About<span className="text-purple">.</span>
+        </h1>
+        <span className="border-[#797979] ml-2 border-[1px] w-full"></span>
+      </div>
+      <div className="flex flex-col md:flex-row gap-14 md:gap-20 pt-10 pb-14 md:pb-40">
+        <div className="flex flex-col md:max-w-[60%]">
+          <p>
+            Hello, Im Dillon! Currently I am a Web Developer and Full Stack
+            Software Engineer located in Lincoln, Nebraska. I have a passion for
+            creating problem solving with code, but also for creating awesome
+            user experiences. I primarily work with HTML, CSS, React and PHP for
+            work, but outside of work I nerd out about TypeScript, Next and
+            Express!
+            <br />
+            <br />
+            Growing up I always had aspirations of becoming a pilot 🛩️ I
+            completed two years of ground school and passed my FAA private
+            pilots license exam, this was of course before getting into software
+            development. I also have my degree in finance in case our jobs are
+            ever taken by AI...
+            <br />
+            <br />I love meeting new people and making new connections. Id love
+            to know more about you. Lets connect! 🔗
+          </p>
+          <br />
+          <div className="flex items-center gap-2">
+            <p className="font-semibold text-purple text-sm sm:text-base">
+              My links
+            </p>
+            <div className="flex gap-2">
+              <div className="flex items-center mr-2">
+                <GoArrowRight className="text-purple" />
+              </div>
+              <a href="https://github.com/Dillona25" target="_blank">
+                <FaGithubSquare className="text-[25px] sm:text-[30px] hover:scale-110 ease-in-out duration-[.5s] hover:cursor-pointer" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/dillonarnold/"
+                target="_blank"
+              >
+                <FaLinkedin className="text-[25px] sm:text-[30px] hover:scale-110 ease-in-out duration-[.5s] hover:cursor-pointer" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col gap-5 md:max-w-[40%]">
+          <div className="flex items-center gap-2">
+            <HiMiniComputerDesktop className="text-4xl" />
+            <h1 className="text-base font-bold">My Tech Stacks</h1>
+          </div>
+          <div className="flex flex-wrap justify-center md:justify-start gap-2 text-sm">
+            <div className="bg-[#2b2b2b] rounded-md p-2">
+              <img
+                alt="html logo"
+                src={Html.src}
+                className="h-[30px] w-[30px] sm:h-[40px] sm:w-[40px] rounded-md"
+              />
+            </div>
+            <div className="bg-[#2b2b2b] rounded-md p-2">
+              <img
+                alt="CSS logo"
+                src={Css.src}
+                className="h-[30px] w-[30px] sm:h-[40px] sm:w-[40px] rounded-md"
+              />
+            </div>
+            <div className="bg-[#2b2b2b] rounded-md p-2">
+              <img
+                alt="Tailwind logo"
+                src={Tailwind.src}
+                className="h-[30px] w-[30px] sm:h-[40px] sm:w-[40px] rounded-md"
+              />
+            </div>
+            <div className="bg-[#2b2b2b] rounded-md p-2">
+              <img
+                alt="JavaScript logo"
+                src={JavaScript.src}
+                className="h-[30px] w-[30px] sm:h-[40px] sm:w-[40px] rounded-md"
+              />
+            </div>
+            <div className="bg-[#2b2b2b] rounded-md p-2">
+              <img
+                alt="TypeScript logo"
+                src={TypeScript.src}
+                className="h-[30px] w-[30px] sm:h-[40px] sm:w-[40px] rounded-md"
+              />
+            </div>
+            <div className="bg-[#2b2b2b] rounded-md p-2">
+              <img
+                alt="PHP logo"
+                src={PHP.src}
+                className="h-[30px] w-[30px] sm:h-[40px] sm:w-[40px] rounded-md"
+              />
+            </div>
+            <div className="bg-[#2b2b2b] rounded-md p-2">
+              <img
+                alt="Next logo"
+                src={Next.src}
+                className="h-[30px] w-[30px] sm:h-[40px] sm:w-[40px] rounded-md"
+              />
+            </div>
+            <div className="bg-[#2b2b2b] rounded-md p-2">
+              <img
+                alt="React logo"
+                src={ReactImg.src}
+                className="h-[30px] w-[30px] sm:h-[40px] sm:w-[40px] rounded-md"
+              />
+            </div>
+            <div className="bg-[#2b2b2b] rounded-md p-2">
+              <img
+                alt="Node logo"
+                src={NodeJS.src}
+                className="h-[30px] w-[30px] sm:h-[40px] sm:w-[40px] rounded-md"
+              />
+            </div>
+            <div className="bg-[#2b2b2b] rounded-md p-2">
+              <img
+                alt="Mongo logo"
+                src={Mongo.src}
+                className="h-[30px] w-[30px] sm:h-[40px] sm:w-[40px] rounded-md"
+              />
+            </div>
+            <div className="bg-[#2b2b2b] rounded-md p-2">
+              <img
+                alt="Cloud logo"
+                src={Cloud.src}
+                className="h-[30px] w-[30px] sm:h-[40px] sm:w-[40px] rounded-md"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};

@@ -70,7 +70,7 @@ export function Contact({
 
   return (
     <div
-      className="flex flex-col pt-32 md:pt-0 md:flex-row justify-center items-center relative"
+      className="flex flex-col pt-40 md:pb-40 md:pt-0 md:flex-row justify-center items-center relative"
       id="contact"
     >
       <div className="flex flex-col mt-[-60px]">

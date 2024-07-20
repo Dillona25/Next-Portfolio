@@ -8,7 +8,7 @@ export const Testimonials = ({ className }: { className?: ReactNode }) => {
   return (
     <section
       id="test"
-      className={`pt-14 md:pt-0 md:pb-36 relative ${className}`}
+      className={`pt-14 md:pt-0 md:pb-40 relative ${className}`}
     >
       <div className="flex gap-4 items-center sm:pb-10">
         <h1 className="text-left font-bold text-[40px] leading-[40px] md:text-5xl lg:text-6xl whitespace-nowrap">
