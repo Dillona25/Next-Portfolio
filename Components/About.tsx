@@ -32,7 +32,7 @@ export const About = () => {
               <p className="text-base sm:text-lg">
                 Hello, Im Dillon! Currently I am a Web Developer and Full Stack
                 Software Engineer located in Lincoln, Nebraska. I have a passion
-                for creating problem solving with code, but also for creating
+                for creative problem solving with code, but also for creating
                 awesome user experiences. I primarily work with HTML, CSS, React
                 and PHP for work, but outside of work I nerd out about
                 TypeScript, Next and Express!
