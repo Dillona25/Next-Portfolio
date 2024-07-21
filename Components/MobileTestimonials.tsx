@@ -5,6 +5,7 @@ import { testimonials } from "@/data/data";
 import Quote from "../assets/Quote.svg";
 import { FiArrowLeft } from "react-icons/fi";
 import { FiArrowRight } from "react-icons/fi";
+import { Reveal } from "./ux/Reveal";
 
 export const MobileTestimonials = ({
   className,
@@ -54,9 +55,11 @@ export const MobileTestimonials = ({
       >
         <div className="flex flex-col gap-4">
           <img alt="quotation mark" src={Quote.src} className="h-10 w-10" />
-          <p className="text-[15px] line-clamp-[10]">
-            {currentTestimonial.quote}
-          </p>
+          <Reveal>
+            <p className="text-[15px] line-clamp-[10]">
+              {currentTestimonial.quote}
+            </p>
+          </Reveal>
           <div className="flex items-center gap-4">
             <img
               alt="Portrait of reviewer"
@@ -64,8 +67,12 @@ export const MobileTestimonials = ({
               className="h-14 w-14 rounded-full"
             />
             <div className="flex flex-col">
-              <p className="text-[15px]">{currentTestimonial.name}</p>
-              <p className="text-[15px]">{currentTestimonial.title}</p>
+              <Reveal>
+                <p className="text-[15px]">{currentTestimonial.name}</p>
+              </Reveal>
+              <Reveal>
+                <p className="text-[15px]">{currentTestimonial.title}</p>
+              </Reveal>
             </div>
           </div>
         </div>

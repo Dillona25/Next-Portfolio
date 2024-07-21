@@ -7,7 +7,7 @@ import { MobileTestimonials } from "@/Components/MobileTestimonials";
 import { Projects } from "@/Components/Projects";
 import { Testimonials } from "@/Components/Testimonials";
 import { FloatingNav } from "@/Components/ui/FloatinNavbar";
-import { navItems, testimonials } from "@/data/data";
+import { navItems } from "@/data/data";
 import { useState } from "react";
 
 export default function Home() {

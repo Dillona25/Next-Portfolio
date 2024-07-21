@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Quote from "../../assets/Quote.svg";
+import { Reveal } from "../ux/Reveal";
 
 type Testimonial = {
   quote: string;
@@ -24,7 +25,9 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({ items }) => {
           <blockquote>
             <div className="flex flex-col gap-4">
               <img alt="quotation mark" src={Quote.src} className="h-10 w-10" />
-              <p className="line-clamp-[10]">{item.quote}</p>
+              <Reveal>
+                <p className="line-clamp-[10]">{item.quote}</p>
+              </Reveal>
               <div className="flex items-center gap-4">
                 <img
                   alt="Portrait of reviewer"
@@ -32,8 +35,12 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({ items }) => {
                   className="h-14 w-14 rounded-full"
                 />
                 <div className="flex flex-col">
-                  <p>{item.name}</p>
-                  <p>{item.title}</p>
+                  <Reveal>
+                    <p>{item.name}</p>
+                  </Reveal>
+                  <Reveal>
+                    <p>{item.title}</p>
+                  </Reveal>
                 </div>
               </div>
             </div>

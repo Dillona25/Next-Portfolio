@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { Reveal } from "../ux/Reveal";
 
 export const ProjectCard = ({
   className,
@@ -31,7 +32,9 @@ export const ProjectCard = ({
       className={`flex flex-col gap-4 max-w-[400px] ${className}`}
     >
       <div className="p-4 pb-5 bg-[#2b2b2b] rounded-2xl flex flex-col gap-4">
-        <img alt={alt} src={src} className="rounded-2xl w-full" />
+        <Reveal>
+          <img alt={alt} src={src} className="rounded-2xl w-full" />
+        </Reveal>
         <div className="font-semibold flex items-center">
           <h2 className="whitespace-nowrap text-xl">{title}</h2>
           <span className="border-[#797979] mx-4 border-[1px] flex-1"></span>
@@ -44,21 +47,27 @@ export const ProjectCard = ({
             </a>
           </div>
         </div>
-        <div className="flex flex-wrap gap-2 text-sm">
-          <span className="p-2 bg-[#757575] rounded-lg">{stack1}</span>
-          <span className="p-2 bg-[#757575] rounded-lg">{stack2}</span>
-          <span className="p-2 bg-[#757575] rounded-lg">{stack3}</span>
-        </div>
-        <p className="text-left overflow-hidden text-ellipsis line-clamp-5">
-          {description}
-        </p>
-        <a
-          href={Github}
-          target="_blank"
-          className="text-purple mt-[-10px] w-fit"
-        >
-          Learn more..
-        </a>
+        <Reveal>
+          <div className="flex flex-wrap gap-2 text-sm">
+            <span className="p-2 bg-[#757575] rounded-lg">{stack1}</span>
+            <span className="p-2 bg-[#757575] rounded-lg">{stack2}</span>
+            <span className="p-2 bg-[#757575] rounded-lg">{stack3}</span>
+          </div>
+        </Reveal>
+        <Reveal>
+          <p className="text-left overflow-hidden text-ellipsis line-clamp-5">
+            {description}
+          </p>
+        </Reveal>
+        <Reveal>
+          <a
+            href={Github}
+            target="_blank"
+            className="text-purple mt-[-10px] w-fit"
+          >
+            Learn more..
+          </a>
+        </Reveal>
         {/* In the future create a modal extending this component + some more conntent */}
       </div>
     </div>
