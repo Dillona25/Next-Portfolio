@@ -3,13 +3,14 @@ import React from "react";
 import Quote from "../../assets/Quote.svg";
 import { Reveal } from "../ux/Reveal";
 import { FaLinkedin } from "react-icons/fa6";
+import Link from "next/link";
 
 type Testimonial = {
   quote: string;
   name: string;
   title: string;
   image?: string;
-  LinkedIn?: string;
+  linkedIn?: string;
 };
 
 type TestimonialCardProps = {
@@ -40,7 +41,9 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({ items }) => {
                   <Reveal>
                     <div className="flex items-center justify-center gap-2">
                       <p>{item.name}</p>
-                      <FaLinkedin className="hover:scale-110 ease-in-out cursor-pointer text-2xl" />
+                      <a href={item.linkedIn} target="_blank">
+                        <FaLinkedin className="hover:scale-110 ease-in-out cursor-pointer text-2xl" />
+                      </a>
                     </div>
                   </Reveal>
                   <Reveal>

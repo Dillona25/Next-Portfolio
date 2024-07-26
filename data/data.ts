@@ -76,7 +76,7 @@ export const testimonials = [
     name: "Anderson Marques",
     title: "React Developer",
     image: "/images/Anderson.jpeg",
-    linkedIn: "",
+    linkedIn: "https://www.linkedin.com/in/fm-anderson/",
   },
   {
     quote:
@@ -84,6 +84,6 @@ export const testimonials = [
     name: "Joshua Duncan",
     title: "Full Stack Developer",
     image: "/images/Josh.jpeg",
-    linkedIn: "",
+    linkedIn: "https://www.linkedin.com/in/jduncan017/",
   },
 ];
