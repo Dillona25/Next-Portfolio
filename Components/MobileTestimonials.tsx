@@ -6,6 +6,7 @@ import Quote from "../assets/Quote.svg";
 import { FiArrowLeft } from "react-icons/fi";
 import { FiArrowRight } from "react-icons/fi";
 import { Reveal } from "./ux/Reveal";
+import { FaLinkedin } from "react-icons/fa6";
 
 export const MobileTestimonials = ({
   className,
@@ -68,7 +69,10 @@ export const MobileTestimonials = ({
             />
             <div className="flex flex-col">
               <Reveal>
-                <p className="text-[15px]">{currentTestimonial.name}</p>
+                <div className="flex items-center justify-center gap-2">
+                  <p className="text-[15px]">{currentTestimonial.name}</p>
+                  <FaLinkedin className="text-2xl" />
+                </div>
               </Reveal>
               <Reveal>
                 <p className="text-[15px]">{currentTestimonial.title}</p>

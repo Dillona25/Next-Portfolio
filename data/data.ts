@@ -4,12 +4,12 @@ import Flight from "../public/images/Flight.png";
 
 export const navItems = [
   { name: "About", link: "#about", scrollPath: "about", offset: 60 },
-  { name: "Projects", link: "#projects", scrollPath: "projects", offset: -20 },
+  { name: "Projects", link: "#projects", scrollPath: "projects" },
   {
     name: "Testimonials",
     link: "#mobileTest",
     scrollPath: "mobileTest",
-    offset: -10,
+    offset: 60,
     className: "block md:hidden",
   },
   {
@@ -64,23 +64,26 @@ export const TrackerData = {
 export const testimonials = [
   {
     quote:
-      "Dillon, whom I tutored at Tripleten, is an exceptional student with a remarkable ability to grasp new concepts swiftly, particularly in our challenging field. Beyond his tech proficiency, Dillon possesses effective communication skills that significantly enhance the learning environment. Notably, he excels in uniting people with his infectious positivity and talent for inspiring others to excel. Dillon demonstrates strong teamwork and leadership qualities, making him a valuable addition to any tech team or project.",
+      "Dillon, whom I tutored at Tripleten, is an exceptional student with a remarkable ability to grasp new concepts swiftly. Beyond his tech proficiency, Dillon possesses effective communication skills that significantly enhance the learning environment. Dillon demonstrates strong teamwork and leadership qualities, making him a valuable addition to any tech team or project.",
     name: "Max Jacobsen",
     title: "Senior Software Engineer",
     image: "/images/Max J.jpeg",
+    linkedIn: "https://www.linkedin.com/in/max-jacobson/",
   },
   {
     quote:
-      "During TripleTen's August Code Jam, I collaborated with Dillon and three other developers to create the Flight Checker, a project spearheaded by Dillon himself. His exceptional curiosity and knack for generating unique ideas were evident throughout our collaboration. Dillon displayed a sincere eagerness to learn and embrace new tools and languages, contributing to the project's success. His commitment ensured a seamless transition from concept to execution making our journey efficient and rewarding. I wholeheartedly endorse Dillon to anyone in search of a dedicated, inquisitive, and innovative developer for their team or project.",
+      "During TripleTen's August Code Jam, I collaborated with Dillon and three other developers to create the Flight Checker, a project spearheaded by Dillon himself. Dillon displayed a sincere eagerness to learn and embrace new tools and languages. His commitment ensured a seamless transition from concept to execution. I wholeheartedly endorse Dillon to anyone in search of a dedicated, and innovative developer for their team.",
     name: "Anderson Marques",
     title: "React Developer",
     image: "/images/Anderson.jpeg",
+    linkedIn: "",
   },
   {
     quote:
-      "During TripleTen's August Code Jam, I collaborated with Dillon and three other developers to create the Flight Checker, a project spearheaded by Dillon himself. His exceptional curiosity and knack for generating unique ideas were evident throughout our collaboration. Dillon displayed a sincere eagerness to learn and embrace new tools and languages, contributing to the project's success. His commitment ensured a seamless transition from concept to execution making our journey efficient and rewarding. I wholeheartedly endorse Dillon to anyone in search of a dedicated, inquisitive, and innovative developer for their team or project.",
-    name: "Anderson Marques",
-    title: "React Developer",
-    image: "/images/Anderson.jpeg",
+      "Working with Dillon was a highlight of my time at Slopgoblins, NPO. His technical skills are top-notch, but his enthusiasm for challenges sets him apart. Interactions with Dillon were energizing, making problem-solving sessions both productive and enjoyable. He asks insightful questions and iterates ideas rapidly. Dillon's relentless drive for growth is admirable. He’s undoubtedly a catalyst for team morale.",
+    name: "Joshua Duncan",
+    title: "Full Stack Developer",
+    image: "/images/Josh.jpeg",
+    linkedIn: "",
   },
 ];
