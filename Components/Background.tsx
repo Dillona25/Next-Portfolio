@@ -41,22 +41,20 @@ export const Background = () => {
                 maintain custom code.
               </p>
             </Reveal>
-            <Reveal>
-              <div className="flex gap-2 mt-3">
-                <div className="bg-black-100 rounded-xl p-3">
-                  <p className="text-sm">HTML</p>
-                </div>
-                <div className="bg-black-100 rounded-xl p-3">
-                  <p className="text-sm">CSS</p>
-                </div>
-                <div className="bg-black-100 rounded-xl p-3">
-                  <p className="text-sm">JavaScript</p>
-                </div>
-                <div className="bg-black-100 rounded-xl p-3">
-                  <p className="text-sm">PHP</p>
-                </div>
+            <div className="flex gap-2 mt-3">
+              <div className="bg-black-100 rounded-xl p-3">
+                <p className="text-sm">HTML</p>
               </div>
-            </Reveal>
+              <div className="bg-black-100 rounded-xl p-3">
+                <p className="text-sm">CSS</p>
+              </div>
+              <div className="bg-black-100 rounded-xl p-3">
+                <p className="text-sm">JavaScript</p>
+              </div>
+              <div className="bg-black-100 rounded-xl p-3">
+                <p className="text-sm">PHP</p>
+              </div>
+            </div>
             <span className="border-[#797979] mt-5 border-[1px] w-full"></span>
           </div>
         </div>
@@ -89,22 +87,20 @@ export const Background = () => {
                 ensure code was meeting strategic and technical goals.
               </p>
             </Reveal>
-            <Reveal>
-              <div className="flex gap-2 mt-3">
-                <div className="bg-black-100 rounded-xl p-3">
-                  <p className="text-sm">TypeScript</p>
-                </div>
-                <div className="bg-black-100 rounded-xl p-3">
-                  <p className="text-sm">React</p>
-                </div>
-                <div className="bg-black-100 rounded-xl p-3">
-                  <p className="text-sm">Tailwind</p>
-                </div>
-                <div className="bg-black-100 rounded-xl p-3">
-                  <p className="text-sm">GraphQL</p>
-                </div>
+            <div className="flex gap-2 mt-3">
+              <div className="bg-black-100 rounded-xl p-3">
+                <p className="text-sm">TypeScript</p>
               </div>
-            </Reveal>
+              <div className="bg-black-100 rounded-xl p-3">
+                <p className="text-sm">React</p>
+              </div>
+              <div className="bg-black-100 rounded-xl p-3">
+                <p className="text-sm">Tailwind</p>
+              </div>
+              <div className="bg-black-100 rounded-xl p-3">
+                <p className="text-sm">GraphQL</p>
+              </div>
+            </div>
             <span className="border-[#797979] mt-5 border-[1px] w-full"></span>
           </div>
         </div>

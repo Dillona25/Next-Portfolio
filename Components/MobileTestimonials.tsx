@@ -71,7 +71,9 @@ export const MobileTestimonials = ({
               <Reveal>
                 <div className="flex items-center justify-center gap-2">
                   <p className="text-[15px]">{currentTestimonial.name}</p>
-                  <FaLinkedin className="text-2xl" />
+                  <a href={currentTestimonial.linkedIn} target="_blank">
+                    <FaLinkedin className="text-2xl" />
+                  </a>
                 </div>
               </Reveal>
               <Reveal>
