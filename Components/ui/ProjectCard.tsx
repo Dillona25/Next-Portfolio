@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { Reveal } from "../ux/Reveal";
 
@@ -26,6 +26,16 @@ export const ProjectCard = ({
   stack3: string;
   handleModalOne?: () => void;
 }) => {
+  const [showMore, setShowMore] = useState(false);
+
+  const handleReadMore = () => {
+    setShowMore(true);
+  };
+
+  const handleReadLess = () => {
+    setShowMore(false);
+  };
+
   return (
     <div
       id="testimonials"
@@ -55,18 +65,31 @@ export const ProjectCard = ({
           </div>
         </Reveal>
         <Reveal>
-          <p className="text-left overflow-hidden text-ellipsis line-clamp-5">
+          <p
+            className={`text-left overflow-hidden text-ellipsis ${
+              showMore === false ? `line-clamp-5` : `line-clamp-none`
+            }`}
+          >
             {description}
           </p>
         </Reveal>
         <Reveal>
-          <a
-            href={Github}
-            target="_blank"
-            className="text-purple mt-[-10px] w-fit"
+          <button
+            onClick={handleReadMore}
+            className={`text-purple w-fit ${
+              showMore === true ? `hidden` : `block`
+            }`}
           >
-            Learn more..
-          </a>
+            Read more..
+          </button>
+          <button
+            onClick={handleReadLess}
+            className={`text-purple w-fit ${
+              showMore === true ? `block` : `hidden`
+            }`}
+          >
+            Read less..
+          </button>
         </Reveal>
         {/* In the future create a modal extending this component + some more conntent */}
       </div>
