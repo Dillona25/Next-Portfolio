@@ -73,24 +73,23 @@ export const ProjectCard = ({
             {description}
           </p>
         </Reveal>
-        <Reveal>
-          <button
-            onClick={handleReadMore}
-            className={`text-purple w-fit ${
-              showMore === true ? `hidden` : `block`
-            }`}
-          >
-            Read more..
-          </button>
-          <button
-            onClick={handleReadLess}
-            className={`text-purple w-fit ${
-              showMore === true ? `block` : `hidden`
-            }`}
-          >
-            Read less..
-          </button>
-        </Reveal>
+        <button
+          onClick={handleReadMore}
+          className={`text-purple w-fit ${
+            showMore === true ? `hidden` : `block`
+          }`}
+        >
+          Read more..
+        </button>
+        <button
+          onClick={handleReadLess}
+          className={`text-purple w-fit ${
+            showMore === true ? `block` : `hidden`
+          }`}
+        >
+          Read less..
+        </button>
+
         {/* In the future create a modal extending this component + some more conntent */}
       </div>
     </div>

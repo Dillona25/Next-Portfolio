@@ -190,7 +190,7 @@ export function Contact({
                 )}
               </span>
             </LabelInputContainer>
-            <LabelInputContainer className="mb-4">
+            <LabelInputContainer>
               <Label htmlFor="message">Your Message</Label>
               <Textarea
                 required

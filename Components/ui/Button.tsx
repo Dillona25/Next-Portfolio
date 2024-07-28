@@ -17,7 +17,7 @@ export const Button = ({
     <button
       disabled={disabled}
       onClick={onClick}
-      className={`py-3 bg-[#525252] mt-6 sm:py-4 px-7 rounded-lg justify-center border border-gray-300 flex items-center gap-2 text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md ${otherClasses}`}
+      className={`py-3 bg-[#525252] mt-10 sm:py-4 px-7 rounded-lg justify-center border border-gray-300 flex items-center gap-2 text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md ${otherClasses}`}
     >
       {position === "left" && icon}
       {title}
@@ -43,7 +43,7 @@ export const ButtonDisabled = ({
     <button
       disabled
       onClick={onClick}
-      className={`py-3 bg-[#525252] opacity-50 cursor-not-allowed mt-6 sm:py-4 px-7 rounded-lg justify-center border border-gray-300 flex items-center gap-2 text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md ${otherClasses}`}
+      className={`py-3 bg-[#525252] opacity-50 cursor-not-allowed mt-10 sm:py-4 px-7 rounded-lg justify-center border border-gray-300 flex items-center gap-2 text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md ${otherClasses}`}
     >
       {position === "left" && icon}
       {title}

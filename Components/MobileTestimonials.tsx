@@ -36,10 +36,10 @@ export const MobileTestimonials = ({
       className={`relative bg-black-200 px-7 ${className}`}
     >
       <div className="flex gap-4 items-center">
-        <h1 className="text-left font-bold text-[40px] leading-[40px]">
+        <span className="border-[#797979] border-[1px] w-full"></span>
+        <h1 className="text-left font-bold leading-[40px]">
           Testimonials<span className="text-purple">.</span>
         </h1>
-        <span className="border-[#797979] ml-2 border-[1px] w-full"></span>
       </div>
       <motion.div
         className="bg-black-100 h-fit m-auto p-4 rounded-[20px] border border-white/[0.1]"

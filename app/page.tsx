@@ -1,5 +1,6 @@
 "use client";
 import { About } from "@/Components/About";
+import { Background } from "@/Components/Background";
 import { Contact } from "@/Components/Contact";
 import { Hero } from "@/Components/Hero";
 import { MessageModal } from "@/Components/MessageModal";
@@ -9,6 +10,7 @@ import { Testimonials } from "@/Components/Testimonials";
 import { FloatingNav } from "@/Components/ui/FloatinNavbar";
 import { navItems } from "@/data/data";
 import { useState } from "react";
+import { FaPaperPlane } from "react-icons/fa";
 
 export default function Home() {
   const [activeModal, setActiveModal] = useState("");
@@ -28,6 +30,7 @@ export default function Home() {
         <Hero />
         <About />
         <Projects />
+        <Background />
         <Testimonials className="hidden md:block" />
         <MobileTestimonials className="md:hidden" />
         <Contact handleMessageModal={handleMessageModal} />
