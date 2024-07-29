@@ -64,7 +64,7 @@ export const TrackerData = {
 export const testimonials = [
   {
     quote:
-      "Dillon, whom I tutored at Tripleten, is an exceptional student with a remarkable ability to grasp new concepts swiftly. Beyond his tech proficiency, Dillon possesses effective communication skills that significantly enhance the learning environment. Dillon demonstrates strong teamwork and leadership qualities, making him a valuable addition to any tech team or project.",
+      "Dillon, whom I tutored at Tripleten, is an exceptional student with a remarkable ability to grasp new concepts swiftly. Beyond his tech proficiency, Dillon possesses effective communication skills that significantly enhance the learning environment. Dillon demonstrates strong teamwork and leadership qualities. Dillon would absolutely makw a valuable addition to any tech team or project.",
     name: "Max Jacobsen",
     title: "Senior Software Engineer",
     image: "/images/Max J.jpeg",
@@ -72,7 +72,7 @@ export const testimonials = [
   },
   {
     quote:
-      "During TripleTen's August Code Jam, I collaborated with Dillon and three other developers to create the Flight Checker, a project spearheaded by Dillon himself. Dillon displayed a sincere eagerness to learn and embrace new tools and languages. His commitment ensured a seamless transition from concept to execution. I wholeheartedly endorse Dillon to anyone in search of a dedicated, and innovative developer for their team.",
+      "I collaborated with Dillon and three other developers to create the Flight Checker, a project spearheaded by Dillon himself. Dillon displayed a sincere eagerness to learn and embrace new tools and languages. His commitment ensured a seamless transition from concept to execution. I wholeheartedly endorse Dillon to anyone in search of a dedicated, and innovative developer for their team.",
     name: "Anderson Marques",
     title: "React Developer",
     image: "/images/Anderson.jpeg",

@@ -25,7 +25,7 @@ export const Hero = () => {
           <p className="uppercase tracking-widest text-xs text-center text-blue-100">
             Created with Next.js & Aceternity UI
           </p>
-          <Link to="about" spy={true} smooth={true} duration={500} offset={65}>
+          <Link to="about" spy={true} smooth={true} duration={500} offset={-50}>
             <Button
               otherClasses="backdrop-blur-lg mx-auto"
               title="Explore more"
