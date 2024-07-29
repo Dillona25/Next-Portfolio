@@ -3,7 +3,11 @@ import { Button } from "./ui/Button";
 import { Reveal } from "./ux/Reveal";
 import { Revalia } from "next/font/google";
 
-export const Background = () => {
+export const Background = ({
+  handleConfirmModal,
+}: {
+  handleConfirmModal: () => void;
+}) => {
   return (
     <section className="relative">
       <div className="max-w-[1350px] m-auto px-7">
@@ -109,6 +113,7 @@ export const Background = () => {
           position="right"
           icon={<FaPaperPlane />}
           otherClasses="m-auto"
+          onClick={handleConfirmModal}
         />
       </div>
     </section>

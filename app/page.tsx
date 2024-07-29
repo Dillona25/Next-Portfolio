@@ -6,6 +6,7 @@ import { Hero } from "@/Components/Hero";
 import { MessageModal } from "@/Components/MessageModal";
 import { MobileTestimonials } from "@/Components/MobileTestimonials";
 import { Projects } from "@/Components/Projects";
+import ResumeConfirmModal from "@/Components/ResumeModal";
 import { Testimonials } from "@/Components/Testimonials";
 import { FloatingNav } from "@/Components/ui/FloatinNavbar";
 import { navItems } from "@/data/data";
@@ -19,6 +20,10 @@ export default function Home() {
     setActiveModal("Message");
   };
 
+  const handleConfirmModal = () => {
+    setActiveModal("Confirm");
+  };
+
   const closeModal = () => {
     setActiveModal("");
   };
@@ -30,11 +35,14 @@ export default function Home() {
         <Hero />
         <About />
         <Projects />
-        <Background />
+        <Background handleConfirmModal={handleConfirmModal} />
         <Testimonials className="hidden md:block" />
         <MobileTestimonials className="md:hidden" />
         <Contact handleMessageModal={handleMessageModal} />
         {activeModal === "Message" && <MessageModal closeModal={closeModal} />}
+        {activeModal === "Confirm" && (
+          <ResumeConfirmModal handleCloseConfirmModal={closeModal} />
+        )}
       </div>
     </main>
   );
