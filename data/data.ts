@@ -25,9 +25,9 @@ export const navItems = [
 export const AviNewsData = {
   src: AviNews.src,
   alt: "Image Of AviNews",
-  title: "AeroTrack",
+  title: "AviNews",
   description:
-    "From concept to reality, AeroTrack is a full-stack website that allows users to read up on the most recent aviation related news and track flights. Created using TypeScript, tailwind CSS, Express.js and MongoDB. The app allows users to save articles, save flights and much more",
+    "From concept to reality, AviNews is a full-stack website that allows users to read up on the most recent aviation related news. Created using TypeScript, tailwind CSS, Express.js and MongoDB. The app allows users to save articles, and much more",
   Github: "https://github.com/Dillona25/AviNews",
   site: "https://www.avinews.twilightparadox.com/",
   stack1: "TypeScript",
