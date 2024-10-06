@@ -30,12 +30,14 @@ export const About = () => {
           <div className="flex flex-col lg:max-w-[60%]">
             <Reveal>
               <p className="text-base sm:text-lg">
-                Hello, Im Dillon! Currently I am a Web Developer and Full Stack
-                Software Engineer located in Lincoln, Nebraska. I have a passion
-                for creative problem solving with code, but also for creating
-                awesome user experiences. I primarily work with HTML, CSS, React
-                and PHP for work, but outside of work I nerd out about
-                TypeScript, Next and Express!
+                Hello, Im Dillon. A detail-oriented and adaptable Software
+                Engineer with two years of hands-on experience. Adept at
+                collaborating cross-functionally to deliver user-centric
+                solutions, with proven success in improving software performance
+                and contributing to strategic business objectives. Im a strong
+                communicator and problem-solver, committed to continuously
+                enhancing my technical skills and delivering high-quality code
+                aligned with best practices and business goals
                 <br />
                 <br />
                 Growing up I always had aspirations of becoming a pilot 🛩️ I

@@ -35,11 +35,6 @@ export const Hero = () => {
           </Link>
         </div>
       </div>
-      <img
-        alt="portrait"
-        src={Portrait.src}
-        className="h-[350px] md:h-[450px] xl:h-[600px] rounded-xl relative"
-      />
     </div>
   );
 };
