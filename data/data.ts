@@ -29,7 +29,7 @@ export const AviNewsData = {
   description:
     "From concept to reality, AeroTrack is a full-stack website that allows users to read up on the most recent aviation related news and track flights! Created using TypeScript, tailwind CSS, Express.js and MongoDB.",
   Github: "https://github.com/Dillona25/AviNews",
-  site: "avi-news-dillona25s-projects.vercel.app",
+  site: "https://avi-news-dillona25s-projects.vercel.app/",
   stack1: "TypeScript",
   stack2: "React.js",
   stack3: "Express.js",
