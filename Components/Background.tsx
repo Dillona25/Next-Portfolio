@@ -59,7 +59,6 @@ export const Background = ({
                 <p className="text-sm">PHP</p>
               </div>
             </div>
-            <span className="border-[#797979] mt-5 border-[1px] w-full"></span>
           </div>
         </div>
 
@@ -105,7 +104,6 @@ export const Background = ({
                 <p className="text-sm">GraphQL</p>
               </div>
             </div>
-            <span className="border-[#797979] mt-5 border-[1px] w-full"></span>
           </div>
         </div>
 
