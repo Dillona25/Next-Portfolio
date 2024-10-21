@@ -41,7 +41,7 @@ export const ProjectCard = ({
       id="testimonials"
       className={`flex flex-col gap-4 max-w-[400px] ${className}`}
     >
-      <div className="p-4 pb-5 bg-[#2b2b2b] rounded-2xl flex flex-col gap-4">
+      <div className="p-4 pb-5 bg-[#2b2b2b] rounded-2xl flex flex-col gap-4 shadow-[0_0_10px_rgba(255,255,255,0.3)]">
         <Reveal>
           <img alt={alt} src={src} className="rounded-2xl w-full" />
         </Reveal>

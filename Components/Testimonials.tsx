@@ -5,7 +5,7 @@ import { TestimonialCard } from "./ui/TestimonialCard";
 
 export const Testimonials = ({ className }: { className?: ReactNode }) => {
   return (
-    <section id="test" className={`relative bg-black-200 ${className}`}>
+    <section id="test" className={`relative ${className}`}>
       <div className="max-w-[1350px] m-auto px-7">
         <div className="flex gap-4 items-center sm:pb-10">
           <span className="border-[#797979] ml-2 border-[1px] w-full"></span>

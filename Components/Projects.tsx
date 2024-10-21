@@ -13,7 +13,7 @@ export const Projects = () => {
             Projects<span className="text-purple">.</span>
           </h1>
         </div>
-        <div className="flex gap-5 md:gap-10 flex-wrap justify-center">
+        <div className="flex gap-8 md:gap-10 flex-wrap justify-center">
           <div className="flex flex-col">
             <ProjectCard {...AviNewsData} />
             <p className="font-semibold text-red-400 text-base text-center mt-3">

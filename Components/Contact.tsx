@@ -69,7 +69,10 @@ export function Contact({
   };
 
   return (
-    <section className="flex justify-center items-center relative" id="contact">
+    <section
+      className="flex justify-center items-center relative bg-black-200"
+      id="contact"
+    >
       <div className="max-w-[1350px] m-auto flex flex-col md:flex-row items-center justify-center px-7">
         <div className="flex flex-col">
           <h1 className="hidden mt-[-50px] md:block max-w-[800px] text-left font-bold text-[40px] leading-[45px] md:text-5xl lg:text-6xl">
@@ -105,7 +108,7 @@ export function Contact({
             </div>
           </div>
         </div>
-        <div className="max-w-xl w-full mx-auto rounded-none md:rounded-2xl  md:p-8 shadow-input dark:bg-black-100">
+        <div className="max-w-xl w-full mx-auto rounded-2xl p-4 md:p-8 mt-10 md:mt-0 dark:bg-black-100 shadow-[0_0_20px_rgba(255,255,255,0.6)]">
           <form ref={form} className="my-8" onSubmit={handleSubmit(onSubmit)}>
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
               <LabelInputContainer>
@@ -224,7 +227,6 @@ export function Contact({
               icon={<FaLocationArrow />}
               position="right"
             />
-            <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
           </form>
         </div>
       </div>

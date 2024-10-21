@@ -9,7 +9,7 @@ export const Background = ({
   handleConfirmModal: () => void;
 }) => {
   return (
-    <section className="relative">
+    <section className="relative bg-black-200">
       <div className="max-w-[1350px] m-auto px-7">
         <div className="flex gap-4 items-center">
           <h1 className="text-left font-bold lg:text-6xl whitespace-nowrap">
@@ -17,7 +17,7 @@ export const Background = ({
           </h1>
           <span className="border-[#797979] ml-2 border-[1px] w-full"></span>
         </div>
-        <div className="flex flex-col gap-5 bg-black-200 p-5 rounded-md">
+        <div className="flex flex-col gap-5 bg-black-100 p-5 rounded-md shadow-[0_0_10px_rgba(255,255,255,0.3)]">
           <div className="flex flex-col gap-1">
             <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
               <Reveal>
@@ -46,16 +46,16 @@ export const Background = ({
               </p>
             </Reveal>
             <div className="flex gap-2 mt-3">
-              <div className="bg-black-100 rounded-xl p-3">
+              <div className="bg-black-200 rounded-xl p-3">
                 <p className="text-sm">HTML</p>
               </div>
-              <div className="bg-black-100 rounded-xl p-3">
+              <div className="bg-black-200 rounded-xl p-3">
                 <p className="text-sm">CSS</p>
               </div>
-              <div className="bg-black-100 rounded-xl p-3">
+              <div className="bg-black-200 rounded-xl p-3">
                 <p className="text-sm">JavaScript</p>
               </div>
-              <div className="bg-black-100 rounded-xl p-3">
+              <div className="bg-black-200 rounded-xl p-3">
                 <p className="text-sm">PHP</p>
               </div>
             </div>
@@ -63,7 +63,7 @@ export const Background = ({
           </div>
         </div>
 
-        <div className="flex flex-col gap-5 mt-10 bg-black-200 p-5 rounded-md">
+        <div className="flex flex-col gap-5 mt-10 bg-black-100 p-5 rounded-md shadow-[0_0_10px_rgba(255,255,255,0.3)]">
           <div className="flex flex-col gap-1">
             <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
               <Reveal>
@@ -92,16 +92,16 @@ export const Background = ({
               </p>
             </Reveal>
             <div className="flex gap-2 mt-3">
-              <div className="bg-black-100 rounded-xl p-3">
+              <div className="bg-black-200 rounded-xl p-3">
                 <p className="text-sm">TypeScript</p>
               </div>
-              <div className="bg-black-100 rounded-xl p-3">
+              <div className="bg-black-200 rounded-xl p-3">
                 <p className="text-sm">React</p>
               </div>
-              <div className="bg-black-100 rounded-xl p-3">
+              <div className="bg-black-200 rounded-xl p-3">
                 <p className="text-sm">Tailwind</p>
               </div>
-              <div className="bg-black-100 rounded-xl p-3">
+              <div className="bg-black-200 rounded-xl p-3">
                 <p className="text-sm">GraphQL</p>
               </div>
             </div>
