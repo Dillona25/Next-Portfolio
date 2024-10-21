@@ -14,7 +14,12 @@ export const Projects = () => {
           </h1>
         </div>
         <div className="flex gap-5 md:gap-10 flex-wrap justify-center">
-          <ProjectCard {...AviNewsData} />
+          <div className="flex flex-col">
+            <ProjectCard {...AviNewsData} />
+            <p className="font-semibold text-red-400 text-base text-center mt-3">
+              Backend currently under construction
+            </p>
+          </div>
           <ProjectCard {...AroundTheUsData} />
           <ProjectCard {...TrackerData} />
         </div>
