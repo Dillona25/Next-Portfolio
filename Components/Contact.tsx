@@ -86,7 +86,7 @@ export function Contact({
             <span className="border-[#797979] ml-2 border-[1px] w-full"></span>
           </div>
           <p className="uppercase tracking-widest text-xs md:mt-[-20px] text-blue-100">
-            Check out my links below if thats more what youre after :)
+            Check out my links below if thats more what you're after :)
           </p>
           <div className="flex items-center gap-2 mt-5">
             <p className="font-semibold text-purple text-sm sm:text-base">

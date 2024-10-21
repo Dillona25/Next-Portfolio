@@ -46,7 +46,7 @@ export const About = () => {
                 software development. I also have my degree in finance in case
                 our jobs are ever taken by AI...
                 <br />
-                <br />I love meeting new people and making new connections. Id
+                <br />I love meeting new people and making new connections. I'd
                 love to know more about you. Lets connect! 🔗
               </p>
             </Reveal>

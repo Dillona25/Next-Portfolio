@@ -64,7 +64,7 @@ export const TrackerData = {
 export const testimonials = [
   {
     quote:
-      "Dillon, whom I tutored at Tripleten, is an exceptional student with a remarkable ability to grasp new concepts swiftly. Beyond his tech proficiency, Dillon possesses effective communication skills that significantly enhance the learning environment. Dillon demonstrates strong teamwork and leadership qualities. Dillon would absolutely makw a valuable addition to any tech team or project.",
+      "Dillon, whom I tutored at Tripleten, is an exceptional student with a remarkable ability to grasp new concepts swiftly. Beyond his tech proficiency, Dillon possesses effective communication skills that significantly enhance the learning environment. Dillon demonstrates strong teamwork and leadership qualities. Dillon would absolutely make a valuable addition to any tech team or project.",
     name: "Max Jacobsen",
     title: "Senior Software Engineer",
     image: "/images/Max J.jpeg",
