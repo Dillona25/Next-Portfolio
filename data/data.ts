@@ -27,7 +27,7 @@ export const AviNewsData = {
   alt: "Image Of AeroTrack",
   title: "AeroTrack",
   description:
-    "From concept to reality, AeroTrack is a full-stack website that allows users to read up on the most recent aviation related news and track flights! Created using TypeScript, tailwind CSS, Express.js and MongoDB.",
+    "From concept to reality, AeroTrack is a full-stack website that allows users to read up on the most recent aviation related news and track flights! Created using TypeScript, Tailwind CSS, Express.js and MongoDB.",
   Github: "https://github.com/Dillona25/AeroTrack-Frontend",
   site: "https://www.aerotrack.twilightparadox.com/",
   stack1: "TypeScript",
