@@ -22,10 +22,10 @@ export const Background = ({
             <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
               <Reveal>
                 <h1 className="text-lg text-purple font-bold p-0">
-                  Software Developer
+                  Web Developer
                 </h1>
               </Reveal>
-              <h2 className="text-lg hidden sm:block">June 2024 - Current</h2>
+              <h2 className="text-lg hidden sm:block">March 2024 - Current</h2>
             </div>
             <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
               <Reveal>
@@ -45,7 +45,7 @@ export const Background = ({
                 maintain custom code.
               </p>
             </Reveal>
-            <div className="flex gap-2 mt-3">
+            <div className="flex flex-wrap gap-2 mt-3">
               <div className="bg-black-200 rounded-xl p-3">
                 <p className="text-sm">HTML</p>
               </div>
@@ -56,7 +56,59 @@ export const Background = ({
                 <p className="text-sm">JavaScript</p>
               </div>
               <div className="bg-black-200 rounded-xl p-3">
+                <p className="text-sm">REST APIs</p>
+              </div>
+              <div className="bg-black-200 rounded-xl p-3">
                 <p className="text-sm">PHP</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-5 mt-10 bg-black-100 p-5 rounded-md shadow-[0_0_10px_rgba(255,255,255,0.3)]">
+          <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
+              <Reveal>
+                <h1 className="text-lg text-purple font-bold p-0">
+                  Software Engineering Tutor
+                </h1>
+              </Reveal>
+              <h2 className="text-lg hidden sm:block">
+                September 2024 - Current
+              </h2>
+            </div>
+            <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
+              <Reveal>
+                <h3 className="font-bold text-lg">TripleTen</h3>
+              </Reveal>
+              <h2 className="text-lg sm:hidden">September 2024 - Current</h2>
+              <h3 className="font-normal text-lg">Remote</h3>
+            </div>
+            <Reveal>
+              <p className="mt-3">
+                Mentor students in debugging complex issues in JavaScript,
+                React.js, Node.js, Express.js, and Google Cloud ensuring
+                comprehension of the process and underlying concepts. Deliver
+                personalized 1:1 guidance, fostering confidence in technical
+                skills and problem-solving. Empower students to overcome
+                challenges, address imposter syndrome, and celebrate progress.
+              </p>
+            </Reveal>
+            <div className="flex flex-wrap gap-2 mt-3">
+              <div className="bg-black-200 rounded-xl p-3">
+                <p className="text-sm">JavaScript</p>
+              </div>
+              <div className="bg-black-200 rounded-xl p-3">
+                <p className="text-sm">React.js</p>
+              </div>
+              <div className="bg-black-200 rounded-xl p-3">
+                <p className="text-sm">Node.js</p>
+              </div>
+              <div className="bg-black-200 rounded-xl p-3">
+                <p className="text-sm">Express.js</p>
+              </div>
+              <div className="bg-black-200 rounded-xl p-3">
+                <p className="text-sm">Google Cloud</p>
               </div>
             </div>
           </div>
@@ -83,22 +135,24 @@ export const Background = ({
             </div>
             <Reveal>
               <p className="mt-3">
-                Collaborated with a team of six engineers using Agile
-                methodologies and CI/CD pipeline practices to streamline
-                development processes and optimize application performance and
-                user experience. Worked with investors and product managers to
-                ensure code was meeting strategic and technical goals.
+                Collaborate with a team of six engineers, leveraging Agile
+                methodologies and CI/CD pipelines to drive efficient development
+                and seamless project delivery. Design and implement dynamic
+                front-end components using React, TypeScript, and Tailwind CSS
+                to elevate user experiences. Develop optimized GraphQL queries
+                and mutations to streamline database interactions, enhancing
+                application performance and functionality.
               </p>
             </Reveal>
-            <div className="flex gap-2 mt-3">
+            <div className="flex flex-wrap gap-2 mt-3">
               <div className="bg-black-200 rounded-xl p-3">
                 <p className="text-sm">TypeScript</p>
               </div>
               <div className="bg-black-200 rounded-xl p-3">
-                <p className="text-sm">React</p>
+                <p className="text-sm">React.js</p>
               </div>
               <div className="bg-black-200 rounded-xl p-3">
-                <p className="text-sm">Tailwind</p>
+                <p className="text-sm">Tailwind CSS</p>
               </div>
               <div className="bg-black-200 rounded-xl p-3">
                 <p className="text-sm">GraphQL</p>
