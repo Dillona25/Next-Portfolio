@@ -36,30 +36,32 @@ export const Background = ({
             </div>
             <Reveal>
               <p className="mt-3">
-                Developed UX/UI components for customer-facing applications
-                using HTML, CSS, JavaScript, and PHP, ensuring all code is
-                semantic, accessible, and aligned with best practices.
-                Collaborated with product managers to define new features and
-                capabilities, and conducted regular performance and speed tests
-                on ALLO websites and software, implementing necessary updates to
-                maintain custom code.
+                Lead the development and testing of REST API integrations to
+                improve data accuracy and streamline workflows across ALLO’s web
+                applications. Collaborated with product managers and
+                stakeholders to design and implement new features and components
+                that aligned with strategic goals and enhanced user engagement.
+                Maintained and optimized software systems to improve
+                performance, ensure smooth functionality, and deliver a seamless
+                user experience, while also creating thorough documentation for
+                future development and maintenance.
               </p>
             </Reveal>
             <div className="flex flex-wrap gap-2 mt-3">
               <div className="bg-black-200 rounded-xl p-3">
-                <p className="text-sm">HTML</p>
-              </div>
-              <div className="bg-black-200 rounded-xl p-3">
-                <p className="text-sm">CSS</p>
-              </div>
-              <div className="bg-black-200 rounded-xl p-3">
                 <p className="text-sm">JavaScript</p>
+              </div>
+              <div className="bg-black-200 rounded-xl p-3">
+                <p className="text-sm">PHP</p>
+              </div>
+              <div className="bg-black-200 rounded-xl p-3">
+                <p className="text-sm">MySQL</p>
               </div>
               <div className="bg-black-200 rounded-xl p-3">
                 <p className="text-sm">REST APIs</p>
               </div>
               <div className="bg-black-200 rounded-xl p-3">
-                <p className="text-sm">PHP</p>
+                <p className="text-sm">Postman</p>
               </div>
             </div>
           </div>
