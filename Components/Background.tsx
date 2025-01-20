@@ -22,7 +22,7 @@ export const Background = ({
             <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
               <Reveal>
                 <h1 className="text-lg text-purple font-bold p-0">
-                  Web Developer
+                  Software Developer
                 </h1>
               </Reveal>
               <h2 className="text-lg hidden sm:block">March 2024 - Current</h2>
