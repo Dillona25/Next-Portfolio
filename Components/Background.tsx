@@ -31,7 +31,7 @@ export const Background = ({
               <Reveal>
                 <h3 className="font-bold text-lg"> ALLO Communications</h3>
               </Reveal>
-              <h2 className="text-lg sm:hidden">June 2024 - Current</h2>
+              <h2 className="text-lg sm:hidden">March 2024 - Current</h2>
               <h3 className="font-normal text-lg"> Lincoln, NE</h3>
             </div>
             <Reveal>

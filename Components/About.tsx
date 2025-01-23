@@ -43,8 +43,7 @@ export const About = () => {
                 Growing up I always had aspirations of becoming a pilot 🛩️ I
                 completed two years of ground school and passed my FAA private
                 pilots license exam, this was of course before getting into
-                software development. I also have my degree in finance in case
-                our jobs are ever taken by AI...
+                software development.
                 <br />
                 <br />I love meeting new people and making new connections. I'd
                 love to know more about you. Lets connect! 🔗
