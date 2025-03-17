@@ -22,7 +22,7 @@ export const Background = ({
             <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
               <Reveal>
                 <h1 className="text-lg text-purple font-bold p-0">
-                  Software Developer
+                  Software Developer - Web
                 </h1>
               </Reveal>
               <h2 className="text-lg hidden sm:block">March 2024 - Current</h2>
@@ -52,10 +52,10 @@ export const Background = ({
                 <p className="text-sm">JavaScript</p>
               </div>
               <div className="bg-black-200 rounded-xl p-3">
-                <p className="text-sm">PHP</p>
+                <p className="text-sm">React</p>
               </div>
               <div className="bg-black-200 rounded-xl p-3">
-                <p className="text-sm">MySQL</p>
+                <p className="text-sm">PHP</p>
               </div>
               <div className="bg-black-200 rounded-xl p-3">
                 <p className="text-sm">REST APIs</p>
@@ -110,7 +110,7 @@ export const Background = ({
                 <p className="text-sm">Express.js</p>
               </div>
               <div className="bg-black-200 rounded-xl p-3">
-                <p className="text-sm">Google Cloud</p>
+                <p className="text-sm">MongoDB</p>
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@ export const Background = ({
             <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
               <Reveal>
                 <h1 className="text-lg text-purple font-bold p-0">
-                  Software Engineer Extern
+                  Full Stack Engineer Extern
                 </h1>
               </Reveal>
               <h2 className="text-lg hidden sm:block">
@@ -130,7 +130,7 @@ export const Background = ({
             </div>
             <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
               <Reveal>
-                <h3 className="font-bold text-lg"> Slopopedia, NPO</h3>
+                <h3 className="font-bold text-lg"> SlopGoblins</h3>
               </Reveal>
               <h2 className="text-lg sm:hidden">January 2024 - March 2024</h2>
               <h3 className="font-normal text-lg">Remote</h3>
