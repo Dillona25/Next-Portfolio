@@ -52,7 +52,7 @@ export const Background = ({
                 <p className="text-sm">JavaScript</p>
               </div>
               <div className="bg-black-200 rounded-xl p-3">
-                <p className="text-sm">React</p>
+                <p className="text-sm">React.js</p>
               </div>
               <div className="bg-black-200 rounded-xl p-3">
                 <p className="text-sm">PHP</p>
