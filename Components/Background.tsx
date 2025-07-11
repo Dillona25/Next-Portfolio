@@ -36,15 +36,11 @@ export const Background = ({
             </div>
             <Reveal>
               <p className="mt-3">
-                Lead the development and testing of REST API integrations to
-                improve data accuracy and streamline workflows across ALLO’s web
-                applications. Collaborated with product managers and
-                stakeholders to design and implement new features and components
-                that aligned with strategic goals and enhanced user engagement.
-                Maintained and optimized software systems to improve
-                performance, ensure smooth functionality, and deliver a seamless
-                user experience, while also creating thorough documentation for
-                future development and maintenance.
+                Employ the full software development lifecycle to build,
+                maintain and integrate APIs into ALLO's web applications using
+                JavaScript and PHP, collaborating cross-functionally with
+                stakeholders to ensure solutions meet technical, strategic, and
+                SEO optimization goals.
               </p>
             </Reveal>
             <div className="flex flex-wrap gap-2 mt-3">
@@ -76,7 +72,7 @@ export const Background = ({
                 </h1>
               </Reveal>
               <h2 className="text-lg hidden sm:block">
-                September 2024 - Current
+                November 2024 - March 2025
               </h2>
             </div>
             <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
